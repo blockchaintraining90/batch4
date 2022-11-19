@@ -1,0 +1,1173 @@
+
+https://downloads.exodus.com/releases/exodus-linux-x64-22.11.13.deb
+https://roadmap.sh/blockchain
+https://medium.com/@gurleen3/how-to-become-a-blockchain-developer-in-2022-95a49e5ed012
+
+
+
+Bitcoin:
+--------
+
+1. Limited supply of 21 Million. Why limited supply ? To make sure the value of Bitcoin is maintained stable over time.
+
+   no of bitcoins currently in use ~ 19 Million
+   no of bitcoins generated will be halved for every 210,000 blocks or 4 years
+
+a. Buying thru exchanges
+b. Thru mining of bitcoins
+
+ 16 BTC - per block
+  8 BTC - per block
+  4 BTC - per block
+  2 BTC - per block
+  1 BTC - pe block
+
+to mine all bitcoins from the protocol it would be around the year ~ 2140
+
+6.25 ---- 2022
+3.125 ---- 2026
+1.85  - 2030
+----
+
+2140
+
+
+Binance:
+--------
+ 1. Ethereum
+ 2. Bitocoin
+
+configuration details: toconnect tonetwork
+
+ Bitcoin - [10.60.45.120 to 10.60.44.165] -- generate pub, priv keys along with wallet address
+ Ethereum - [10.15.56.16 to 10.15.45.135] -- EIP generate pub, priv keys along with wallet address
+
+
+
+y = mx + c
+
+account = random combination (public ky and private key)
+
+3 tightly bound to ech other 
+
+SHA 256 - one sich alogrithm --- which will crete these random 
+
+RIPEMD160 - hash all these and create a fixed byte of account address
+
+
+if we create multiple such accounts ---> it will generate multiple such priv, pub keys
+
+wallet:
+
+ 1. accnt -- key1
+ 2. accnt -- key2
+
+Command Line Terminals:
+-------------------------
+
+how does public and private keys re created ---
+
+ 1. name
+ 2. mail id
+ 3. mobile numer
+ 4. XYZ 
+
+func Generatewallet (name, mail, mobile, xyz) 
+
+ {
+
+ retun pub, priv, wallet)
+
+}
+
+
+type Blockchain
+
+{
+
+ Header
+  version v*
+  Previous hash
+  Timestamp
+  
+ no of txn
+ merkle hash
+ size
+ Magic no (0XDGDBA) -----> identify whether this block belogs to bitcoin/someother chain
+
+}
+
+
+
+USD: 
+-----
+
+
+INR:
+----
+
+ hunders
+ ten
+
+
+BTC follows UTXO model (unspent transaction output)
+-------------------------------------------------------
+
+1. Purchased 10 BTC ---> 10 BTC ---     (input 10, output ix not calcuated bcz I've spent this unit)
+2. Credit of 5 BTC from Aamir ----> 5 BTC (input is 5 BTC, output ix not calcuated bcz I've spent this unit)
+
+I've to spend 2 BTC  to transfer to Sriram
+
+
+account { 13 BTC }
+        
+         { 10 BTC CR  ---  unspent
+            5 BTC CR ( 5 BTC , 2 BTC , usera , userb) ---- spent ---->
+            3 BTC CR --- unspent
+                     } 
+         { 2BTC }
+         we create blocks from multiple txns...MIners will have visibilty of the no of txn from a particular accnt.
+
+        single block - us should be able to accept only 1 txn per account
+         
+
+1MB - 100 txns - Bitcoin --- 20-40 mins
+1MB - 120 tnx
+
+
+userb : 
+
+1. credit if 2 BTC from usera --- unspent
+
+
+100 CR 
+
+
+
+1. 304402207142029b29a232d5303fb2faff574c2cde17c7e43a3d2c03002a707233163812022022e2b76962647ff2370eb2b23838dd7ea9d178d08e726895f3fac1b75065c21901
+2. 020d58e6e47e016da2786cecc296908d7e2c64f6ecbdde14960d1208770b654924
+7. checsign ---> alog this correspond sot same sign and its valid
+
+
+
+
+20 DB
+
+10 DB
+
+5 CR
+----
+
+
+
+
+From saalamir . to Everyone 08:06 PM
+what will happen when bitcoin have been all 21M mined ?
+From himanshusharmaiimc16 . to Everyone 08:06 PM
+we are discussing the fundamentals of block chain or bitcoins
+From himanshusharmaiimc16 . to Me (Direct Message) 08:08 PM
+fundamentals of block chain or buying and selling bitcoin
+From kamal78 . to Everyone 08:12 PM
+Please repeat SHA256 after this topic 
+From saradhy555 . to Everyone 08:13 PM
+i have seen storm chain app. what is it?
+From saalamir . to Everyone 08:13 PM
+So binance and other wallet that store our key have access to our account and they can do whatever they want?
+From kamal78 . to Everyone 08:14 PM
+yes
+this are custodial wallets 
+hardware wallets are non-custodial wallets
+From saalamir . to Everyone 08:16 PM
+can you explain more onto hardware wallets please?
+what is custodial wallets means?
+From varshaz2017 . to Everyone 08:16 PM
+wher is leson 4
+?
+From Vinoth Jagadeesan to Everyone 08:16 PM
+show the path again
+From 99arvind99 . to Everyone 08:17 PM
+What about Trust wallet?
+From Ranjithkumar Ramakrishnan . to Everyone 08:17 PM
+there is no lesson 4
+From saalamir . to Everyone 08:17 PM
+are we going in depth of custodial hardware hardware  later?
+From Ranjithkumar Ramakrishnan . to Everyone 08:17 PM
+we have only lesson 1
+From saalamir . to Everyone 08:17 PM
+Would love to know how it is made?
+From sunilsalkapuram . to Everyone 08:17 PM
+click on lesson 2. it should bring up other lessons
+From sairam1806 . to Everyone 08:18 PM
+we have only 2 lessons
+From saalamir . to Everyone 08:19 PM
+press lesson 2 it will pop up the rest!
+From varshaz2017 . to Everyone 08:19 PM
+only 2 lessons seen
+From kush.jain5724@gmail.com . to Everyone 08:19 PM
+found it
+From Vinoth Jagadeesan to Everyone 08:19 PM
+its 4.3 not 4.11
+From sairamraman . to Everyone 08:19 PM
+4
+From sairam1806 . to Everyone 08:19 PM
+got it
+From sairamraman . to Everyone 08:19 PM
+4
+4.11 ???
+From kush.jain5724@gmail.com . to Everyone 08:19 PM
+yeah its 4.3
+From Me to Everyone 08:19 PM
+https://www.exodus.io/
+From Vinoth Jagadeesan to Everyone 08:19 PM
+please share the link
+From Me to Everyone 08:19 PM
+https://www.exodus.io/
+From Nivedita Marathe . to Everyone 08:21 PM
+plz wait 
+From saalamir . to Everyone 08:21 PM
+You should go step by step
+From Nivedita Marathe . to Everyone 08:21 PM
+please wait 
+From sairamraman . to Everyone 08:21 PM
+SIR
+From Nivedita Marathe . to Everyone 08:21 PM
+go slow
+From sairamraman . to Everyone 08:21 PM
+I MISSED
+From saalamir . to Everyone 08:21 PM
+Im lost?
+From Vinoth Jagadeesan to Everyone 08:21 PM
+The lab environment is currently in Stopped state, so the access is suspended. Cannot connect to the lab environment until it is started. Please click on Start Instance to wake up the environment.
+From sairamraman . to Everyone 08:21 PM
+sir i missed
+From sairam1806 . to Everyone 08:21 PM
+can u repeat once
+From Vinoth Jagadeesan to Everyone 08:21 PM
+getting this error
+From sairamraman . to Everyone 08:21 PM
+should i download - https://www.exodus.io/?
+From Vinoth Jagadeesan to Everyone 08:22 PM
+yes, its working now
+From saalamir . to Everyone 08:22 PM
+should I download somthing from the website?
+From sunny6321740 . to Everyone 08:22 PM
+its opening
+From kamal78 . to Everyone 08:22 PM
+I couldn't 
+From ajaimaathavankvi . to Everyone 08:22 PM
+sir you said you shall share the blockchain developer road map 
+
+From varshaz2017 . to Everyone 08:22 PM
+it is being setup..labs
+From sairamraman . to Everyone 08:22 PM
+can you repeat one more time
+From lakshaychugh4 . to Everyone 08:22 PM
+please repeat the lab thingonce again
+From sairamraman . to Everyone 08:22 PM
+Some where i am lost. one time please
+From Nivedita Marathe . to Everyone 08:23 PM
+yes done 
+From Me to Everyone 08:23 PM
+LMS portal ---> Practice Labs --> RDP
+From sunny6321740 . to Everyone 08:23 PM
+I am In
+From Nivedita Marathe . to Everyone 08:23 PM
+done
+From sunny6321740 . to Everyone 08:23 PM
+done
+done
+From Ranjithkumar Ramakrishnan . to Everyone 08:24 PM
+I need to download anything?
+From saalamir . to Everyone 08:24 PM
+Should we download something from https://www.exodus.io?
+From Vinoth Jagadeesan to Everyone 08:24 PM
+done
+From ahmedshahnawaz251 . to Everyone 08:24 PM
+LOADING
+From saalamir . to Everyone 08:24 PM
+are it is just to understand? 
+From kush.jain5724@gmail.com . to Everyone 08:24 PM
+lab is open 
+From sairamraman . to Everyone 08:24 PM
+when i am trying to click rpd - it is not getting activated'
+From saalamir . to Everyone 08:24 PM
+you are mute?
+Sir
+From preetisonawane45 . to Everyone 08:24 PM
+its not working
+From lakshaychugh4 . to Everyone 08:25 PM
+I cant see any authorised URL
+it says username psdwrd and HOST
+From saradhy555 . to Everyone 08:25 PM
+done
+From kush.jain5724@gmail.com . to Everyone 08:25 PM
+done sir i am on ubuntu page i guess
+From lakshaychugh4 . to Everyone 08:25 PM
+please check this
+I cant see any authorised URL
+
+it says username psdwrd and HOST
+
+From sreehari01 . to Everyone 08:25 PM
+sir can u tell once again
+From manuyash38 . to Everyone 08:26 PM
+connexted
+From lakshaychugh4 . to Everyone 08:26 PM
+no there is no UARL
+From saradhy555 . to Everyone 08:26 PM
+its working for me
+From lakshaychugh4 . to Everyone 08:26 PM
+it says username pwd
+and HOST
+not URL
+From sairamraman . to Everyone 08:26 PM
+it is not working for me
+From sunilsalkapuram . to Everyone 08:26 PM
+lakshay - check if you are RDP access
+From kush.jain5724@gmail.com . to Everyone 08:26 PM
+its working sir 
+From Vinoth Jagadeesan to Everyone 08:26 PM
+Yes, working fine
+From Me to Everyone 08:26 PM
+RDP Access
+From saalamir . to Everyone 08:26 PM
+again? 
+From 99arvind99 . to Everyone 08:26 PM
+Good to go
+From lakshaychugh4 . to Everyone 08:26 PM
+yes just got it
+From saalamir . to Everyone 08:26 PM
+not clear
+From Vinoth Jagadeesan to Everyone 08:26 PM
+I am inside VM
+From sairamraman . to Everyone 08:26 PM
+there is nothing coming up
+From sunny6321740 . to Everyone 08:26 PM
+Its Working for me
+From Ranjithkumar Ramakrishnan . to Everyone 08:26 PM
+I need to download anything?
+From sairamraman . to Everyone 08:26 PM
+i am facing an issue
+From lakshaychugh4 . to Everyone 08:27 PM
+I am at VM
+From sairamraman . to Everyone 08:27 PM
+RDP - i am not able to click
+From saalamir . to Everyone 08:28 PM
+yes
+yes
+From sairamraman . to Everyone 08:28 PM
+ok i got this page
+From Ranjithkumar Ramakrishnan . to Everyone 08:28 PM
+yes
+From sairamraman . to Everyone 08:28 PM
+what should cick
+From sairam1806 . to Everyone 08:28 PM
+RDP click is not working
+From kamal78 . to Everyone 08:28 PM
+ok done
+From Me to Everyone 08:29 PM
+https://www.exodus.io/
+From manuyash38 . to Everyone 08:30 PM
+failed
+From lakshaychugh4 . to Everyone 08:30 PM
+yes
+From kush.jain5724@gmail.com . to Everyone 08:30 PM
+yes downloaded exodus
+From 99arvind99 . to Everyone 08:30 PM
+Yes
+From manuyash38 . to Everyone 08:30 PM
+done
+From sairamraman . to Everyone 08:31 PM
+when i click on RPD there is no change in my system
+i will just see your screen
+From saalamir . to Everyone 08:31 PM
+very sloooow pls wait 
+From Vinoth Jagadeesan to Everyone 08:31 PM
+browser not opening inside VM
+From saalamir . to Everyone 08:31 PM
+the linux is sloow
+From Ranjithkumar Ramakrishnan . to Everyone 08:32 PM
+super slow
+From lakshaychugh4 . to Everyone 08:32 PM
+we have to download exodus desktop right?
+From sunny6321740 . to Everyone 08:32 PM
+pls explain again
+From varshaz2017 . to Everyone 08:32 PM
+plz repeat..after exodus download
+From sairamraman . to Everyone 08:32 PM
+Sir i got inoto the unix browser
+From 99arvind99 . to Everyone 08:32 PM
+How to get password pop up again?
+I closed it
+From Ranjithkumar Ramakrishnan . to Everyone 08:32 PM
+linux system hanging
+From sairamraman . to Everyone 08:33 PM
+now should i got to Exodus website
+i clciked on download
+From kush.jain5724@gmail.com . to Everyone 08:33 PM
+downloaded sir deb file
+From Nivedita Marathe . to Everyone 08:33 PM
+its very slow sir 
+From saradhy555 . to Everyone 08:33 PM
+download the desktop mode type right?
+From sunilsalkapuram . to Everyone 08:34 PM
+nope. the drop down on the Download Exodus is not bringing up anything
+From kamal78 . to Everyone 08:34 PM
+download button is not working
+From 99arvind99 . to Me (Direct Message) 08:34 PM
+Not able to download desktop version!!!
+From Vinoth Jagadeesan to Everyone 08:34 PM
+its very slow 
+From manuyash38 . to Everyone 08:34 PM
+yes not working
+From 99arvind99 . to Me (Direct Message) 08:34 PM
+Can you please tell how to get password pop up window again I closed it?
+From kush.jain5724@gmail.com . to Everyone 08:34 PM
+downloaded sir deb file
+From Ranjithkumar Ramakrishnan . to Everyone 08:34 PM
+not working. when I click download there is no action
+From Nivedita Marathe . to Everyone 08:35 PM
+not working sir 
+From sairamraman . to Everyone 08:35 PM
+VERY SLOW SIR
+sorry for the caps
+From Nivedita Marathe . to Everyone 08:35 PM
+not working 
+From Ranjithkumar Ramakrishnan . to Everyone 08:35 PM
+It's only works on my system (windows), but in linux its not responding
+no
+From sunny6321740 . to Everyone 08:35 PM
+no
+From Nivedita Marathe . to Everyone 08:35 PM
+not working 
+From kush.jain5724@gmail.com . to Everyone 08:36 PM
+yes sir downloaded deb file
+From Ranjithkumar Ramakrishnan . to Everyone 08:36 PM
+all of them get stuck
+From sunny6321740 . to Everyone 08:36 PM
+its HUNG
+From manuyash38 . to Everyone 08:36 PM
+for me also lab not working
+From saalamir . to Everyone 08:36 PM
+Im out off sync with today course 😥
+From sunny6321740 . to Everyone 08:36 PM
+no Drop Down List
+wait
+From ravivaishnav . to Everyone 08:36 PM
+same issue
+lab froze 
+From kamal78 . to Everyone 08:36 PM
+not working sir
+From ravivaishnav . to Everyone 08:36 PM
+i think
+From Nivedita Marathe . to Everyone 08:36 PM
+sir on mac
+From kamal78 . to Everyone 08:36 PM
+please wait
+From Nivedita Marathe . to Everyone 08:36 PM
+not getting 
+it 
+From saradhy555 . to Everyone 08:36 PM
+not downloaded as it is not working either it is slow or not working
+From Nivedita Marathe . to Everyone 08:36 PM
+yes please 
+sir 
+From sairamraman . to Everyone 08:36 PM
+when i click on the desktop. it is npt showing any drop down
+From manuyash38 . to Everyone 08:36 PM
+okie
+From sunilsalkapuram . to Everyone 08:36 PM
+Everyone - check Desktop/Blockchain Labs-files/
+From Nivedita Marathe . to Everyone 08:36 PM
+we move next 
+please 
+From Vinoth Jagadeesan to Everyone 08:36 PM
+Lab environment is very slow. please fix it ASAP
+From Ranjithkumar Ramakrishnan . to Everyone 08:36 PM
+yes better move to next topic
+From sunilsalkapuram . to Everyone 08:36 PM
+see if there is a file for exodus already
+From ajaimaathavankvi . to Everyone 08:36 PM
+at the end we shall do these
+From Nivedita Marathe . to Everyone 08:37 PM
+sir we move next 
+yes sir 
+From sunny6321740 . to Everyone 08:37 PM
+ok
+From Nivedita Marathe . to Everyone 08:37 PM
+yes 
+From kush.jain5724@gmail.com . to Everyone 08:37 PM
+my steps are working fine sir , downloaded the file , lab is working 
+From sunny6321740 . to Everyone 08:37 PM
+new Topic
+From Nivedita Marathe . to Everyone 08:37 PM
+yes 
+new topic
+From sairamraman . to Everyone 08:37 PM
+yeah ok point taken
+From Vinoth Jagadeesan to Everyone 08:37 PM
+ok.. we can do practice lab later
+From 99arvind99 . to Me (Direct Message) 08:37 PM
+Alright
+From sunny6321740 . to Everyone 08:37 PM
+practice at the END
+From 99arvind99 . to Everyone 08:37 PM
+Ok
+From preetisonawane45 . to Everyone 08:37 PM
+not working
+From saradhy555 . to Everyone 08:37 PM
+okay 
+From saalamir . to Everyone 08:37 PM
+lets do the lab after just teach us how it works at the end guide us on how to work it now just tell us the value 
+From ajaimaathavankvi . to Everyone 08:37 PM
+can we close th etab
+From saalamir . to Everyone 08:38 PM
+I dont know what is going on have we finished anything  
+From Me to Everyone 08:39 PM
+https://www.bitaddress.org/
+From Sairam Raman to Everyone 08:40 PM
+yes in the link now
+From Me to Everyone 08:40 PM
+https://www.bitaddress.org/
+From preetisonawane45 . to Everyone 08:40 PM
+yes
+From ravivaishnav . to Everyone 08:41 PM
+s
+From kush.jain5724@gmail.com . to Everyone 08:41 PM
+yes sir
+From Sairam Raman to Everyone 08:41 PM
+Yes - outside 
+From 99arvind99 . to Me (Direct Message) 08:41 PM
+Yeah
+From manuyash38 . to Everyone 08:41 PM
+yes
+From saradhy555 . to Everyone 08:41 PM
+yes its working
+From saalamir . to Everyone 08:41 PM
+What is bitaddress.org?
+From Sairam Raman to Everyone 08:41 PM
+yes sir
+From manuyash38 . to Everyone 08:42 PM
+created
+From Sairam Raman to Everyone 08:42 PM
+Ok got it.
+From Vinoth Jagadeesan to Everyone 08:43 PM
+cool
+From Nivedita Marathe . to Everyone 08:43 PM
+yes
+From kush.jain5724@gmail.com . to Everyone 08:43 PM
+yes
+From ravivaishnav . to Everyone 08:43 PM
+yes
+From Velmurugan J . to Everyone 08:43 PM
+yes
+From saradhy555 . to Everyone 08:43 PM
+what about the options paper wallet and etc like bulk ?
+all are same right?
+From saalamir . to Everyone 08:43 PM
+what is the purpose of the address?
+From Vinoth Jagadeesan to Everyone 08:43 PM
+clear
+From ajaimaathavankvi . to Everyone 08:44 PM
+but isnt the itcoon address random?
+From lakshaychugh4 . to Everyone 08:44 PM
+but this address every apps provide by default right?
+From Vinoth Jagadeesan to Everyone 08:44 PM
+is it one time public or private key or permanent? 
+From ajaimaathavankvi . to Everyone 08:44 PM
+how does it fall the the reciever
+From saalamir . to Everyone 08:44 PM
+this is just example or it real account addresses?
+From lakshaychugh4 . to Everyone 08:45 PM
+repeat paperwallet
+From saradhy555 . to Everyone 08:47 PM
+ust like having our own key to the locker and bank employ having another key
+for locker
+From Velmurugan J . to Everyone 08:47 PM
+if its not connected to internet what is the use of it ?
+how can some one can do transaction  with it ?
+From ravivaishnav . to Everyone 08:47 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-22.11.13.deb
+From sonalichowdhury34@gmail.com . to Everyone 08:48 PM
+done
+From Sairam Raman to Everyone 08:48 PM
+in the real world how does these wallets work
+From ravivaishnav . to Everyone 08:48 PM
+they can use this link to solve issue of button
+From saradhy555 . to Everyone 08:48 PM
+assisted labs is not available
+From Sairam Raman to Everyone 08:48 PM
+it is only background 
+ok got you 
+From Velmurugan J . to Everyone 08:49 PM
+Okay thank you
+From Sairam Raman to Everyone 08:49 PM
+Yes
+From saalamir . to Everyone 08:49 PM
+it is not about exodus it is just random jumping from subject to other subject without us being sync 
+From Me to Everyone 08:49 PM
+BIP 38
+From lakshaychugh4 . to Everyone 08:52 PM
+Protocols or smart contracts is one and same thing
+
+and bitcoin protocol is BIP38 am i correct?
+What is a protocol?
+is it a code?
+From Vinoth Jagadeesan to Everyone 08:52 PM
+Smart contracts is in Ethereum 
+From manuyash38 . to Everyone 08:53 PM
+protcol is step to precaution any damage for data
+From saalamir . to Everyone 08:57 PM
+login to bitcoin platform  or other wallet company?
+From sunny6321740 . to Everyone 08:58 PM
+What about CoinDCX, WazirX
+ok
+is it Country Specific
+From Ranjithkumar Ramakrishnan . to Everyone 08:58 PM
+How Binance connect with bitcoin network? 
+From saalamir . to Everyone 08:58 PM
+so the address is internal to bitcoin platform? 
+From sunny6321740 . to Everyone 09:00 PM
+Can we Open a Wallet which is not India Based ?
+From saalamir . to Everyone 09:01 PM
+OKKKKKK
+got it 
+From Ranjithkumar Ramakrishnan . to Everyone 09:01 PM
+ wallet address vs public key
+From sptlcm@gmail.com . to Everyone 09:01 PM
+if suppose crypto is banned in India then are these wallet can also be banned by government
+From kamal78 . to Everyone 09:02 PM
+please explain SHA256
+From saradhy555 . to Everyone 09:04 PM
+what if a user changed his/her location after opening the account?
+From saalamir . to Everyone 09:06 PM
+and bitcoin network generate this  account?
+clear
+From ahmedshahnawaz251 . to Everyone 09:06 PM
+one email can only one wallet or many??
+
+From sptlcm@gmail.com . to Everyone 09:06 PM
+is trust wallet can be use for the same purpose
+From ravivaishnav . to Everyone 09:07 PM
+s
+yes
+From kush.jain5724@gmail.com . to Everyone 09:07 PM
+yes
+From Vinoth Jagadeesan to Everyone 09:07 PM
+clear
+From Nivedita Marathe . to Everyone 09:07 PM
+s
+From saalamir . to Everyone 09:07 PM
+yesss
+From Ranjithkumar Ramakrishnan . to Everyone 09:07 PM
+yes
+From sairam1806 . to Everyone 09:07 PM
+yes
+From kamal78 . to Everyone 09:08 PM
+I think sir have to start some clarifications in Hindi....
+From ravivaishnav . to Everyone 09:08 PM
+Yes
+From saradhy555 . to Everyone 09:09 PM
+jjust like digtal signature 
+From Ranjithkumar Ramakrishnan . to Everyone 09:09 PM
+Can I directly create the bitcoin account without any wallets?
+From ahmedshahnawaz251 . to Everyone 09:10 PM
+where do we use digital signing in mobile wallets??
+
+From ravivaishnav . to Everyone 09:11 PM
+to transfer crypto assets or signing smart contracts 
+From Ranjithkumar Ramakrishnan . to Everyone 09:11 PM
+If I know these tools to handle, can I create?
+thanks. clear
+From saalamir . to Everyone 09:12 PM
+so we can make infinite amount of accounts?
+From ravivaishnav . to Everyone 09:12 PM
+Yes
+From saalamir . to Everyone 09:13 PM
+we can overload the bitcoins network and spam account!
+yes
+From Ranjithkumar Ramakrishnan . to Everyone 09:13 PM
+yes
+From saalamir . to Everyone 09:13 PM
+is the account creation function is centralized in bitcoin?
+From ahmedshahnawaz251 . to Everyone 09:14 PM
+can you recap paper wallet
+From saalamir . to Everyone 09:14 PM
+Okk
+From ahmedshahnawaz251 . to Everyone 09:18 PM
+bitcoin address is the public key or what ??
+
+From saradhy555 . to Everyone 09:18 PM
+account number
+From Nivedita Marathe . to Everyone 09:18 PM
+s
+From manuyash38 . to Everyone 09:22 PM
+  yes
+From ahmedshahnawaz251 . to Everyone 09:22 PM
+sir break
+From Vinoth Jagadeesan to Everyone 09:22 PM
+right side one its matching
+From kush.jain5724@gmail.com . to Everyone 09:23 PM
+my lab was working sir 
+From kamal78 . to Everyone 09:23 PM
+sir....... use this link in browser
+From Me to Everyone 09:24 PM
+https://github.com/blockchaintraining90/batch4
+From ravivaishnav . to Everyone 09:24 PM
+sir sharing this link so that anyone can download and eliminate button issue
+From kamal78 . to Everyone 09:24 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-22.11.13.deb
+From Sairam Raman to Everyone 09:25 PM
+ Ok sir
+thanks
+yes
+From lakshaychugh4 . to Everyone 09:25 PM
+Half n hour pls
+From manuyash38 . to Everyone 09:25 PM
+25minutes
+From Vinoth Jagadeesan to Everyone 09:25 PM
+30 mins
+From manuyash38 . to Everyone 09:25 PM
+yes
+From ravivaishnav . to Everyone 09:26 PM
+Can we use paper wallet to make actual transactions? 
+ok sir
+From Sairam Raman to Everyone 09:51 PM
+Back
+From sairam1806 . to Everyone 09:51 PM
+what is obantu user password to install exodus?
+From sunny6321740 . to Everyone 09:51 PM
+yes
+From Nivedita Marathe . to Everyone 09:52 PM
+s
+From sreehari01 . to Everyone 09:52 PM
+ss
+From sairam1806 . to Everyone 09:52 PM
+yes
+From 99arvind99 . to Everyone 09:52 PM
+Yeah
+From lakshaychugh4 . to Everyone 09:52 PM
+yes
+From manuyash38 . to Everyone 09:52 PM
+yes
+From sonalichowdhury34@gmail.com . to Everyone 09:52 PM
+yes
+From Nivedita Marathe . to Everyone 09:52 PM
+yes sir 
+From ravivaishnav . to Everyone 09:53 PM
+cant see screen
+From ravivaishnav . to Everyone 09:53 PM
+yes
+From sonalichowdhury34@gmail.com . to Everyone 09:53 PM
+yes
+From saradhy555 . to Everyone 09:53 PM
+yes
+From ravivaishnav . to Everyone 09:53 PM
+now i can
+From Vinoth Jagadeesan to Everyone 09:53 PM
+yes. can see
+From manuyash38 . to Everyone 09:53 PM
+yeah
+From Sairam Raman to Everyone 09:53 PM
+Yes able to see
+From kamal78 . to Everyone 09:53 PM
+yes
+From preetisonawane45 . to Everyone 09:53 PM
+y
+From kamal78 . to Everyone 09:53 PM
+S
+From saalamir . to Everyone 09:57 PM
+what is the version ?
+so is the version reference to bitcoin running version?  
+From manuyash38 . to Everyone 09:58 PM
+yes
+From Ranjithkumar Ramakrishnan . to Everyone 09:58 PM
+can we modify the block?
+From saradhy555 . to Everyone 10:00 PM
+just like the common code at the begining of bank account number
+From Ranjithkumar Ramakrishnan . to Everyone 10:00 PM
+then why version is need?
+From Nivedita Marathe . to Everyone 10:01 PM
+link
+plz
+From Me to Everyone 10:01 PM
+https://www.blockchain.com/explorer
+From ravivaishnav . to Everyone 10:03 PM
+yes
+From saalamir . to Everyone 10:05 PM
+how much did they gain from this?
+in 2 minutes only???? 
+From ahmedshahnawaz251 . to Everyone 10:07 PM
+how do they mine?
+From saalamir . to Everyone 10:08 PM
+Amazing! 
+From ravivaishnav . to Everyone 10:08 PM
+Hight?
+From saalamir . to Everyone 10:08 PM
+Are this all in the headers?
+From ravivaishnav . to Everyone 10:09 PM
+ok
+From saalamir . to Everyone 10:09 PM
+or data regarding the block?
+From sptlcm@gmail.com . to Everyone 10:09 PM
+so here what do we mean by merkle root ?
+From saalamir . to Everyone 10:09 PM
+there is no version?
+From sptlcm@gmail.com . to Everyone 10:10 PM
+so here what do we mean by merkle root ?
+so average confirmation time is 10 minutes
+From ahmedshahnawaz251 . to Everyone 10:10 PM
+what is the transactions in mining the blocks
+From sptlcm@gmail.com . to Everyone 10:12 PM
+so Satoshi is small unit of btc
+From saalamir . to Everyone 10:12 PM
+is the transaction fee changeable?
+From ravivaishnav . to Everyone 10:12 PM
+1 BTC = satoshi?
+From saalamir . to Everyone 10:13 PM
+can we see the data of this hash?
+this is public accountn key 
+From ravivaishnav . to Everyone 10:14 PM
+I seen many people compare other crypto assets with satoshi.
+is there any reason
+From sonalichowdhury34@gmail.com . to Everyone 10:14 PM
+cent
+From ravivaishnav . to Everyone 10:17 PM
+okay
+got it
+Thanks 
+Yes
+From Nivedita Marathe . to Everyone 10:17 PM
+s
+s
+s
+s
+s
+From varshaz2017 . to Everyone 10:17 PM
+ys
+From saalamir . to Everyone 10:17 PM
+we did not see version in the blockchain.com web site? 
+From saradhy555 . to Everyone 10:17 PM
+s
+From saalamir . to Everyone 10:17 PM
+Okk
+clear
+From Nivedita Marathe . to Everyone 10:22 PM
+s
+From ravivaishnav . to Everyone 10:22 PM
+s
+From Vinoth Jagadeesan to Everyone 10:22 PM
+s
+From ravivaishnav . to Everyone 10:25 PM
+What is real life use case?
+From saalamir . to Everyone 10:25 PM
+if I transfer BTC to another account will the transfer be immediate?
+Or it need to be blocked?
+From ravivaishnav . to Everyone 10:25 PM
+Depending upon network traffic 
+From saalamir . to Everyone 10:26 PM
+but my BTC account will be reduction if things goes wrong what happen?
+From ravivaishnav . to Everyone 10:28 PM
+Unless trx doesn't get verified, there will be no deduction from your wallet
+From ahmedshahnawaz251 . to Everyone 10:28 PM
+how many transactions are there in a block?
+From ajaimaathavankvi . to Everyone 10:33 PM
+who charges the transaction fee?
+like to whom does the money go to?
+From ravivaishnav . to Everyone 10:33 PM
+To miners
+From sunny6321740 . to Everyone 10:33 PM
+Exchange Charges
+From ajaimaathavankvi . to Everyone 10:33 PM
+but arent they paid in USD
+From ravivaishnav . to Everyone 10:33 PM
+No
+in BTC
+From kamal78 . to Everyone 10:34 PM
+:)
+From Ranjithkumar Ramakrishnan . to Everyone 10:35 PM
+no
+From Nivedita Marathe . to Everyone 10:35 PM
+s
+From saradhy555 . to Everyone 10:35 PM
+can we try 2 and 5
+?
+From sptlcm@gmail.com . to Everyone 10:35 PM
+I don't understand the logic behind it
+From saalamir . to Everyone 10:35 PM
+how can you catch fraud transaction?
+From ahmedshahnawaz251 . to Everyone 10:35 PM
+recap it
+From saradhy555 . to Everyone 10:36 PM
+one at a time
+From Ranjithkumar Ramakrishnan . to Everyone 10:36 PM
+why it's in a single block? why not in separate two blocks?
+From sunny6321740 . to Everyone 10:37 PM
+u mean till the Block is not confirmed and added to chain next transaction will not be validated
+ok
+From saalamir . to Everyone 10:37 PM
+how can you catch fraud transaction?
+
+From saradhy555 . to Everyone 10:37 PM
+single track train journey
+From sunny6321740 . to Everyone 10:37 PM
+it willbe inviliodated'
+From sptlcm@gmail.com . to Everyone 10:37 PM
+what if different point of times like after one second
+From ahmedshahnawaz251 . to Everyone 10:38 PM
+how many transactions are there in a single block
+how many transactions are there in a single block
+From ravivaishnav . to Everyone 10:39 PM
+but blockchain.com shows over filled block... like 124% or 150% or something like that... what does it represent? 
+From Ranjithkumar Ramakrishnan . to Everyone 10:39 PM
+Can I double spend, my first transaction in first block and another transaction in another block? 
+From saradhy555 . to Everyone 10:41 PM
+any number or not valid that we can not transfer?
+From ravivaishnav . to Everyone 10:41 PM
+i have another question
+can you unmute?
+ok
+From Nivedita Marathe . to Everyone 10:41 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 10:41 PM
+s
+From Vinoth Jagadeesan to Everyone 10:41 PM
+yes
+From ahmedshahnawaz251 . to Everyone 10:41 PM
+yes
+From Ranjithkumar Ramakrishnan . to Everyone 10:41 PM
+no
+From saalamir . to Everyone 10:41 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 10:41 PM
+y
+From kamal78 . to Everyone 10:44 PM
+how fees count?
+From Ranjithkumar Ramakrishnan . to Everyone 10:44 PM
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+From saalamir . to Everyone 10:44 PM
+if build a blockchain i can I set a fixed number txn rather than blcok size in MB?
+if build a blockchain i can I set a fixed number txn rather than blcok size in MB
+From saradhy555 . to Everyone 10:44 PM
+tariff will be same for all platforms?
+From Velmurugan J . to Everyone 10:45 PM
+is there any way to calculate the fee ?
+From saradhy555 . to Everyone 10:45 PM
+slab ststem
+From kamal78 . to Everyone 10:45 PM
+i think its depends on dificullty.....
+From Ranjithkumar Ramakrishnan . to Everyone 10:47 PM
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+From saradhy555 . to Everyone 10:47 PM
+may be lab
+From Ranjithkumar Ramakrishnan . to Everyone 10:47 PM
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+From saradhy555 . to Everyone 10:47 PM
+its already 10.50
+From Ranjithkumar Ramakrishnan . to Everyone 10:47 PM
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+Can I double spend, my first transaction in first block and another transaction in another block? 
+
+From Velmurugan J . to Everyone 10:51 PM
+what is signing ?
+From saradhy555 . to Everyone 10:53 PM
+like confirmation/...?
+From ahmedshahnawaz251 . to Everyone 10:58 PM
+once more recap please bitcoin scripts
+From sptlcm@gmail.com . to Everyone 10:59 PM
+plz explain the terms
+again by example
+From kush.jain5724@gmail.com . to Everyone 10:59 PM
+sir all this is theoretical right ? when will se make blockchains and do coding
+From Nivedita Marathe . to Everyone 11:03 PM
+:)
+you have to go thru the process 
+From Vinoth Jagadeesan to Everyone 11:03 PM
+step by step will go
+From ajaimaathavankvi . to Everyone 11:04 PM
+have to rerevise
+From kush.jain5724@gmail.com . to Everyone 11:05 PM
+sure sir , was just asking :D 
+From Nivedita Marathe . to Everyone 11:05 PM
+wow
+From sunny6321740 . to Everyone 11:05 PM
+wev have how many Cohort
+From Nivedita Marathe . to Everyone 11:05 PM
+so we wil b able to develop our own blockchain after this course right 
+From ahmedshahnawaz251 . to Everyone 11:06 PM
+tommoorrw bitcoin attacks
+From kush.jain5724@gmail.com . to Everyone 11:06 PM
+yeah , ssure
+From Vinoth Jagadeesan to Everyone 11:06 PM
+will do lab now
+From ahmedshahnawaz251 . to Everyone 11:07 PM
+what tp practice
+what we have to practice?
+
+From varshaz2017 . to Everyone 11:07 PM
+tmrw we can do ..labs n assisted
+From saalamir . to Everyone 11:07 PM
+I would practice my own but I would not know what to do.
+From kamal78 . to Everyone 11:07 PM
+quite difficult to understand...... :(
+From Nivedita Marathe . to Everyone 11:07 PM
+please post link
+From Me to Everyone 11:07 PM
+https://roadmap.sh/blockchain
+From ravivaishnav . to Everyone 11:11 PM
+are we able to finish this within this course? 
+From Nivedita Marathe . to Everyone 11:11 PM
+sir please share your number and email id 
+From kush.jain5724@gmail.com . to Everyone 11:11 PM
+i openend my lab 
+From ahmedshahnawaz251 . to Everyone 11:11 PM
+will we learn oracle?
+From Nivedita Marathe . to Everyone 11:11 PM
+are we able to finish this within this course
+From ahmedshahnawaz251 . to Everyone 11:11 PM
+will we learn oracle?
+From Nivedita Marathe . to Everyone 11:11 PM
+sir please share your number and email id 
+From Me to Everyone 11:12 PM
+https://redblink.com/blockchain-developer-roadmap/
+From saalamir . to Everyone 11:12 PM
+I am interested in building a private blockchain?
+From Me to Everyone 11:12 PM
+https://medium.com/@gurleen3/how-to-become-a-blockchain-developer-in-2022-95a49e5ed012
+From sunilsalkapuram . to Everyone 11:12 PM
+thanks a lot for the roadmap link. it gives a really good picture of everything that is out there to learn end to end. 
+From Vinoth Jagadeesan to Everyone 11:13 PM
+Lab environment is working fine, we can continue 
+From Me to Everyone 11:13 PM
+https://www.amazon.in/Bitcoin-Dummies-Prypto/dp/1119076137
+From Vinoth Jagadeesan to Everyone 11:13 PM
+ok
+From Nivedita Marathe . to Everyone 11:13 PM
+for me too stuck 
+From kush.jain5724@gmail.com . to Everyone 11:13 PM
+what do we have to do in lab ?
+From sairam1806 . to Everyone 11:14 PM
+what is ubuntu user password?
+From Me to Everyone 11:14 PM
+https://www.amazon.in/Blockchain-Dummies-Tiana-Laurence/dp/8126568933
+From kush.jain5724@gmail.com . to Everyone 11:15 PM
+what do we have to do in lab ?
+From ravivaishnav . to Everyone 11:15 PM
+https://downloads.exodus.com/releases/exodus-macos-22.11.13.dmg
+From Vinoth Jagadeesan to Everyone 11:15 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-22.11.13.deb
+From Sairam Raman to Everyone 11:16 PM
+yes
+From kush.jain5724@gmail.com . to Everyone 11:16 PM
+no issue
+From Sairam Raman to Everyone 11:16 PM
+All good
+From ravivaishnav . to Everyone 11:16 PM
+asking for password
+From lakshaychugh4 . to Everyone 11:16 PM
+tryiing
+From kush.jain5724@gmail.com . to Everyone 11:19 PM
+sir explain again how you opened it in ubuntu
+From Me to Everyone 11:19 PM
+sudo dpkg -i
+From saradhy555 . to Everyone 11:20 PM
+now its not working for me
+From Me to Everyone 11:20 PM
+sudo dpkg -i exodus-linux-x64-22.11.13.deb
+From ajaimaathavankvi . to Everyone 11:22 PM
+sir ubunt password>
+?
+From sunny6321740 . to Everyone 11:22 PM
+pls share Link again
+From Sairam Raman to Everyone 11:22 PM
+can we not copy paste that Sudo details
+From ajaimaathavankvi . to Everyone 11:22 PM
+while i was downlaoding 
+it asks for ubuntu password
+From manuyash38 . to Everyone 11:22 PM
+yes
+From ajaimaathavankvi . to Everyone 11:22 PM
+i tped that its not working
+ok 
+From manuyash38 . to Everyone 11:23 PM
+but its showing not working
+From Vinoth Jagadeesan to Everyone 11:23 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-22.11.13.deb
+Ubuntu password issue
+From manuyash38 . to Everyone 11:25 PM
+same
+same we tried
+From Learner success manager to Everyone 11:26 PM
+raise a support ticket
+From Vinoth Jagadeesan to Everyone 11:26 PM
+ok
+From Learner success manager to Everyone 11:26 PM
+https://lms.simplilearn.com/nps/session/633ef1f78ce55e424c5f41b0
+From Me to Everyone 11:27 PM
+https://lms.simplilearn.com/nps/session/633ef1f78ce55e424c5f41b0
+From Nivedita Marathe . to Everyone 11:28 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 11:28 PM
+ok
+From Vinoth Jagadeesan to Everyone 11:28 PM
+ok
+From kamal78 . to Everyone 11:28 PM
+ok
+From Ranjithkumar Ramakrishnan . to Everyone 11:28 PM
+I'm still not get answer for my question
+From Nivedita Marathe . to Everyone 11:28 PM
+sir can u share your number and email id 
+From kamal78 . to Everyone 11:29 PM
+:)
+From Ranjithkumar Ramakrishnan . to Everyone 11:29 PM
+Can I double spend, my first transaction in first block and another in another block?
+From Sairam Raman to Everyone 11:29 PM
+I A=ONLY GETTING ERRRO
+sorry for teh caps
+From Shashwitha to Everyone 11:30 PM
+error with?
+From Sairam Raman to Everyone 11:30 PM
+I tried typing in the link in terminal but it is not working
+From Shashwitha to Everyone 11:30 PM
+can you paste here what you typed
+From Ranjithkumar Ramakrishnan . to Everyone 11:30 PM
+But first block will take sometime right? 
+From Sairam Raman to Everyone 11:30 PM
+'cannot access archieves
+From Me to Everyone 11:30 PM
+sudo dpkg -i exodus-linux-x64-22.11.13.deb
+From Vinoth Jagadeesan to Everyone 11:31 PM
+Sure
+From 99arvind99 . to Me (Direct Message) 11:31 PM
+Yeah
+From saradhy555 . to Everyone 11:31 PM
+unpacked...thatsit right?
+From Me to Everyone 11:32 PM
+https://lms.simplilearn.com/nps/session/633ef1f78ce55e424c5f41b0
+From saradhy555 . to Everyone 11:32 PM
+10 Q
+From kamal78 . to Everyone 11:32 PM
+you can find it in rec
+From Learner success manager to Everyone 11:33 PM
+https://lms.simplilearn.com/nps/session/633ef1f78ce55e424c5f41b0
+From kamal78 . to Everyone 11:33 PM
+good night
+From saalamir . to Everyone 11:33 PM
+so can we ask from two miner to take one TXN to add in two blocks? 
+From kamal78 . to Everyone 11:33 PM
+keep connected with whatsapp
+everyone
+From saalamir . to Everyone 11:33 PM
+ok 
+thanks
+From saradhy555 . to Everyone 11:33 PM
+10q again
+
