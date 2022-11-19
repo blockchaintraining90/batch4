@@ -1,0 +1,445 @@
+I have signed some digital e contractions on legal terms in company... like signing a contract or deal.. with some parties what method do u think they would be using right now?
+Can you suggest?
+
+Ans: 
+
+1. Digital doc - as Data store, which we can pass to the smart cntract as an evidence - stored on ledger --->
+2. Smart contract - 
+
+business contract:
+ 
+Lender - Bank1
+Borrower - Bank2
+Entitelemtn - ABC
+Amount - 10 MN USD 
+
+Deloy this smart contract ----> Trade finance contract --> banka, bankb --->  hjvkh8768979087jnkjn
+
+
+
+2) By tokenizing we are string the data in smart way so this is always in data base. so if someelse want to do fraud over registration it will be helpful??
+am i sounding correct ?
+   
+  Translating real identities --> unique token reference numbers ---> some actions can be perfomed ----> data is stored on the ledger ---> consensus (mutual agreement)
+
+3) nowadays all application are asking for tokenization of the credit or debit card -- is that related to Blockchain ??
+i think RBI has issued a note on that - to tokenise the card numbers 
+ 4765868687987987 -----> 758768787897878
+
+
+
+4) yes my question is same how they have high cost ----> Public blockchains 
+   
+   Starbucks (10M) ---> NFT platform for user royalty tokens ---> 
+   writing smart contract logic
+   data residing on ledger ---> ethereum protocol --> dta entry into ledger  --- servers, backup servers for DB
+
+5) Can anyone explain that if i am a bank (generic) how i am benefitted with blockchain?
+
+
+ Future group (big bazar) ---> Reliance mart (Firm B)
+
+ coupons ---> 5000 - per user
+
+ all these coupons got invalidated 5000 * 1000 = 50000000 Mn --- capital loss
+
+Bank A, Bank B, Bank C ---> Trade finance a lending for 100 Cr --- Tokens
+
+Ledger:
+------
+ 1. Genesis block --- Metadata detaiils (doc)
+ 2. over a period of 10 yrs, bank B has paid 50 Cr of rupees --- ledger
+ 3. I will execute a smart contract (will deal only on tokens) that will transfer function remaing amount basis the terms specified
+ 4. transfer function will invoke a API call to actual bank DB for real movement of money
+
+top 10 banks are using DLT for real time settlement of lending/borrowing use cases - 
+
+DLT network:
+--------------
+ 1. all user records
+ 2. all transfer records b/w user to Future group
+ 3. balances of all users
+
+
+DB:
+---
+ 1. these
+
+
+
+
+
+Like right now these are the ongoing disadvantages and this blockchain will solve
+
+pls pick this question
+
+6) i am able to understand what you are explaining here but have a doubt about coding being a non technical  background..is that easy/ something like impossible or can be managed kinnaaa?
+  
+ Techn: 
+ 
+ 
+
+7) HOW COME FOR PREVIOUS BLOCK OF WHEN FIRST BLOCK IS CREATE....?
+
+  Block1 - 100 transactions are part of it
+
+  Block2 - 200 transactions are part of it --- hashes (funds) (a,b --- 100) (a, hacker) --- 100 , change of hash - abc, bcd
+
+ .
+
+  Block3 - (abc) 150 transactions (previous hash reference to block2)
+
+
+ 9a07274adaa9950259c2ad023e9f369a
+
+ 8ac960ac31de0a0485ec1a778b12bebe
+
+
+
+
+
+HOW SYNCHRONOUS IS HAPPEND? 5 NODE IS RUNNING 4 NODE IS DONW,USING REMAIN 1 NODE, WE CAN PROCEED OUR TRANSACTION. Once network is up, how data is restoring or sychronous remain 4 node?
+
+In the perrmission environment does each admin users get a control. ? if a bank document need to be deleted - how does others get notified .. what is the control
+
+10) Wht  causes  volatility in value of tokens?
+
+11) what is consesus?
+
+I need more technical examples of more technologies
+
+
+token: 
+
+
+Smart contract
+
+Create - 
+
+ 1. owner - User A, total value = 10Mn, Uniqueid of token - 12345, Date - 1/1/2021
+
+Transfer - (userA, UserB, total value = 10Mn, Uniqueid of token - 12345)
+
+ 2. owner - User B, total value = 10Mn, Uniqueid of token - 12345, Date - 1/1/2022
+
+Owner - User B
+ 
+
+ GETH - we can run private node in a blockchain
+
+ Linux commands and Docker commands
+
+Hash (txn1, txn2, txn3, txn4, 100) =  one single hash
+
+hash (txn1) - H1
+hash (txn2) - H2
+hash (txn3) - H3
+hash (txn4) - H4
+
+hash (H1 and H2) - H12
+hash (H3 and H4) - H34
+
+hash (H12 and H34) - H1234
+
+ 7 hashing -  H1234
+
+[txn1, txn2, txn3, txn4] ---- some other database
+
+20 yrs
+ hash - H1234
+ 
+ Ledger - make  query to ledger - H1234
+
+
+7 nodes in a network:
+---------------------
+
+1 - responses from other 6 nodes and including it's response 
+
+node1 - [Y,Y,Y,Y,N,N]
+ 
+node2 - [Y,Y,Y,N,N,Y]
+
+Node1, 2, 3, 4, 5 --- network
+PBFT
+
+round1 - node 3 - miner , [1,2,4,5] - validators
+
+
+func Validate ([]node)
+ {
+   x = no of Y received
+   y = no of N received
+   
+  if (x > y)
+   
+   {
+     transactionstatus = valid
+  else
+   { 
+     transactionstatus = invalid
+
+}
+
+100 txns are available in transaction pool 
+
+1. Pick the txn from txn pool
+2. Validate the txn
+3. Solve the mathematical puzzle, which will be set by POW protocol
+4. Puzzle is solved, publish the proof of the puzzle to other miners in the network
+5. Once the miners confirm the puzzle is valid
+6. Then block is added to the chain
+7. Rewards will be sent to the miner who created the block
+
+TXN pool:
+-----------
+
+ { txn1, txn2, txn3, ....... txn100 }
+
+1) txn i shaving valid public key, is the sender having enough funds to transfer, is there a valid receipient
+
+100) all 100 are valid
+
+miners have to compute Nonce value in addition to the merkle root hash
+
+root hash (h1+h2......h100) -- h100
+
+100 miners are there... almost 100 miners creating 100 blocks --- network congestion
+
+only 1 miner should create 1 Block at a given time
+
+POW --- Nonce --- add's the complexity
+
+computing hashes for 100 txn ----- a123ghdjkkk 
+
+
+-----> 00000 + a123ghdjkkk --- 00000a123ghdjkkk 
+-----> 00000000 + a123ghdjkkk 
+
+
+for (i=0; i < 999999999999; i ++)
+
+ { 
+
+  nonce paramter has to be find out (lottery)
+  integer  nonce = 656756
+
+}
+
+Brute force technique --->
+
+POW ---> high energy consumption ---> Miners are forming pools (group of ppl)
+
+10 students ---- miners
+
+1 Teacher   ---- POW
+
+
+india
+US
+UK
+UAE
+
+10 studnets --- 1 time --- Teacher - 1 chocolate
+
+10KM .....2/3 
+
+100 KM .... 1 student - 1 reward
+
+100 blocks ---> nonce at 6500
+
+200 .-----> nonce 7500
+
+0000000000 - 10
+2009 - 00000
+2022 - 9809708798908908
+
+Proof of Stake: 32 ETH , 21 Miners
+
+1000 miners ----> 32 eth
+
+timer [M1, M2, M3, -...... M21]
+
+b1 - M1
+b2 - M19
+b3 - M15
+b4 - M7
+.... b21 - M4
+
+Slashing:
+---------
+
+M4 - malicious (32 eth)
+
+block rewards ---> 0.5 eth - txn rewards whcih are monetary 
+
+10 yrs/20 yrs ---> 10-15 ETH
+
+block num 400 ----> 1 false txn ---valid --> M4 ----> activy - fardulent ----> slahing activity ---> 32 ETH --- gone
+
+
+Proof of elapsed Time: Intel Corp -- Permissioned blockchains ---> group of entreprises
+---------------------------------
+
+1. No need of txn fee
+2. No need of crypto
+3. No need of staking
+4. No need of any computational power
+
+Bank A, Bank B, Bank C, Bank D ------> Credit ledger (which maintains crdit score of customer base for ease and efficient Financial products)
+
+not always data is dealing with Monetary value -->
+
+Miners - [Bank a, Bank b, Bank c, Bank d]
+
+bl - bank a (10 sec)
+b2 - bank b (abc bank) - 100 Cr -- 10 sec
+b3 - bank e ---- its not possible -- bank d 10 sec
+b4 - bank a,b,c ----> bank c -- 10 sec
+b5 - a,b,d ---
+
+
+who wil create blocks ----> 
+
+ POW - puzzle
+ POS - staking
+ POET - Nodes will undergo some random time for not being miners
+ PBFT - weighted averages of votes from other validators
+
+round1 - block1 - [a,b,c,d] ----> c is miner (50 ms) , [a,b,d] - validators
+round2 - block2 - [a,b,d]   ----> a is miner (50 ms) , [b,c,d] - validators
+round3 - block3 - [c,b,d]   -----> b 
+
+
+
+
+
+
+POET, Raft, Paxos, PBFT etc ---> generic way of validating the txn and creating blocks
+
+create blocks:
+--------------
+
+1. create block for every 1 second
+2. create block for 100 MB
+3. create block for evry 100 txns
+
+
+
+Data sync:
+-----------
+
+1MN --- hasehs of 1 million blocks and store the hash
+
+1. Full data replication
+2. Data snapshots
+  hash + actual data
+
+
+
+
+
+
+Public blockchains:
+--------------------
+
+ Bitcoin - Stack based programming language
+
+ Ethereum - 
+
+ 1. Solidity
+ 2. web3.js
+ 3. ether.js
+
+Permissioned blockchains: Hyperledger, R3 Corda
+--------------------------
+
+ 1. Java - HYperledger, Corda
+ 2. Javascript - Hyperledger
+ 3. Golang - Hyperledger
+
+Linux commands - 
+
+
+docker commands -
+
+
+ERC20 --- 
+
+NFT, web.js --->
+
+fin, health - SC, Ins, EDu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

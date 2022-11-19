@@ -1,0 +1,75 @@
+type struct BlockDetails
+
+ {
+    Header []String 
+    Body   []String
+ }
+
+Token for Land Registry:
+------------------------
+
+Fungible tokens - Each and evry token is same and is of same value
+
+ CBDC - Central bank digital curreny - $ USD - 1000000 - I supply - 
+ ERC20 - Ethereum tokens
+
+ token ERC20 {
+       Supply()
+       Transfer()
+       Ownsership()
+       Destroy()
+       BalanceEnq()
+    }
+
+ Token -1M, validate who is the owner for 99th token 
+ 
+ Get owner of 99th token - Ownership(uniqueid 99)
+                     - Alice
+                     - Bob  
+
+Non Fungible Tokens - ERC721
+
+houseunique id - ASGFC765
+
+{
+  owner Alice 1970
+        Bob   1980
+        Dan   2000 
+}
+
+ 4000 node -> 
+
+
+ (usera, userb, 10$, banka, bankb) ------- Ideal transaction payload
+ hashing is way of securing your data to store in unreadable format
+
+ sha256 -- input - (usera, userb, 10$, banka, bankb)     
+        -- output - j87687hjnkjnk098098098n8798798jbjkb  ---> blockchain
+ Hash is always one way ---->
+
+
+
+
+
+
+
+
+
+
+Public: bitcoin, ethereum etc
+------ 
+ 1. To connect u need only wallet id (hexadecimal unique address)
+ 2. Identity is anonymus
+ 3. anyone can read/write data from ledger
+
+
+
+Permissioned: etnetrprise like Hyperledger, R3 Corda ----> Banks - MOney lending/borrowing system --- sbi, hdfc, icici 
+-------------
+ 1. u need to provide ur identity (public key, Digital certificates)
+ 2. identity is revelaed
+ 3. only actors who are eligible can connect to network
+
+
+Private: (Quorum, Binance)
+---------
