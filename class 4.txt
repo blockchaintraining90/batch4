@@ -1,0 +1,141 @@
+Full nodes: (256GB RAM, 100 GB)
+-----------
+
+1. they act as txn initiat nodes
+2. wallets will be connected
+3. Miners will maintain full nodes (ledger data to validate)
+
+
+
+
+Light nodes: (32/64 GB, 1 GB)
+------------
+
+1. initiating txn from wallets
+2. routing the txn to mem pools and connecting routes in th network
+
+
+
+Initiate txn from wallet ---> goes to txn memmory pools -----> it will be send to some other nodes --> forward the txn to mining nodes
+
+
+user a to user b --> 5BTC
+
+wallet will construct (usera, 5 btc, userb) [1001001001 0011] 
+
+we always encyt and digitl sign the txn with privtae
+
+
+Sudo - in linux starts for role of a amind user
+chmod - used for changing file permissions (read/write)
+
+
+genius embark board together later pony choice kidney aspect used long cradle
+
+1. Download the app image from URL https://download.electrum.org/4.1.2/    (electrum-4.1.2-x86_64.AppImage)
+
+2. Goto download folder and then right click and choose "open terminal"
+
+3. sudo chmod +x electrum-4.1.2-x86_64.AppImage and enter
+
+4. run the script sudo ./electrum-4.1.2-x86_64.AppImage --testnet
+
+5. It will open the instalation wizard
+
+6. Follow steps as per DOC
+
+7. goto url https://coinfaucet.eu/en/btc-testnet/ for test BTC
+
+8. 
+
+Use commands to grant privlges to the app image file
+
+3. use command to lauch the wallet
+4. create seed phrase
+5. copy the seed pharse
+5. reenter the seed phrase
+6. RECEIVE tab
+7. click on new address tab
+8. goto test faucet url https://coinfaucet.eu/en/btc-testnet/
+9. paste ur adress and enter
+
+
+
+LOngest chain follows the network: network will wait for 7 block confirmations to identuy which is the longest chain followed
+
+1. Actual blocks
+2. Orphan blocks
+
+
+Very old days of Bitcoin had only Bitcoing scripts (opcodes) ---- validate txns
+
+BSV (bitcoin santoshi value) blockchain ---- fork of bitcoin ---> we can dapps on top of BSV
+
+https://bitcoinsv.com/scrypt/
+
+https://scrypt.io/
+
+
+Ethereum:
+-----------
+
+1. To execute smart contract - we need some GAS as it's required by EVM (Car)
+2. GAS limit is specified in terms of bytes (10 litres)
+3. GAS price is specified in terms of ether uints (1 liter ~ 100 INR)
+
+ amt = 10 * 100 ===> 1000 units
+
+hello world
+
+Hellow.SOL
+:------------
+Pragma 0.5.1
+
+Contract helloWorld {
+
+ func sayHelloworld () public view retunrs
+ { 
+
+  print ("Hello World")
+  update.block(var1)
+  read.block(var2)
+
+}
+
+}
+
+
+Compiled it on REmix : 3 units
+ 1 gas --> 0.2 ETH
+ total ---> 3 * 0.2 ETH ===> 0.6 ETH  ----> gas units
+
+when we write data to blockchain ---> it has some GAS unist to execute
+
+
+
+
+DAO: goverance of tokens, creating new protocol (on ethereum blockchain) 
+----
+
+ BOD:
+
+ contract bodContract
+
+{  
+
+  bod [10] string
+  no of votes [] int
+  Vote casted bool
+
+}
+
+
+if no of votes.bod[i] > 5
+
+ {
+
+   set bod[i] = winner
+
+}
+
+
