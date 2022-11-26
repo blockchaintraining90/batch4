@@ -1,0 +1,238 @@
+https://etherscan.io/address/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0#code
+
+
+https://trufflesuite.com/truffle/
+https://trufflesuite.com/docs/truffle/how-to/create-a-project/
+
+
+mkdir MetaCoin
+cd MetaCoin
+
+truffle unbox metacoin
+
+
+touch addnum.sol (create empty file)
+
+nano addnum.sol (edit the file)
+
+copy the code from remix and paste into the addnum.sol file
+
+CTRL + X 
+
+save the file
+
+
+
+1. Remix --- browser based IDE
+2. Truffle --- command line inteface for more developer options
+3. Ganache --- desktop app for running local blockahin instance
+
+
+test just the solidity code ---->> remix
+
+deployments, test case frameworks --- truffle or hardhat (most preferred) or foundry
+
+
+
+
+
+https://sepolia.etherscan.io/
+
+miner1 :
+
+[1, 2, 3, 4, 5]
+
+miner2 
+
+[2, 3, 4, 6] ---- X
+
+[1,2,3,4,5] ----> 
+
+ 1 ----> usea to useb ---> balance check ---->
+ 2 3  4 5 ------> user a ----> balane check --->
+
+
+
+
+b1 - [12345]
+
+miner wll have transaction fee as reward----> [1000 ETH] --- 1% ---> 10 ETH
+
+State transition:
+-----------------
+
+1. which transits the data from one state to another after succssful execution of transaction
+
+ state: Alice
+--------
+ v1 - 1024 timstamp - 11.25.2022 --- previous state in ledger
+ v2 - 1014 timestamp - 11.26.2022  --- current state in ledger <<<<-----
+
+
+
+chain 1: B1, B2, B3, B4, B5, B7, B8, B9, B11, B12 ------ 50 miners
+
+They will wait for the longest chain in the network by most miners being followed
+while confirming trnx it shoudl get approval of next 7 blocks from the miners
+
+
+chain 2: B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12 ----75 miners
+
+a. orphan blocks in BTC
+b. uncle blocks  in ETH
+
+Simple txn:
+------------
+
+transfer of funds from alice to bob
+
+1. unique number call nonce(random number per txn)
+2. data fileds
+3. recepient and sender signtures
+4. gas price, gas limit, 
+5. value of the txn
+
+
+ [ orginal txn 1 ----> 50 eth to userb --- usera --- 768768767
+   orginal txn 1 ----> 50 eth to userb --- usera --- 987809709 ]
+
+POS:  21 nodes of miners are running
+----
+
+
+m1 - 32 eth
+m2 - 23 eth
+m3 - 19 eth
+
+
+....
+
+round 1 - M1
+round 2 - M3
+
+
+round 7 - M16
+
+   
+
+execution which is involved in signature validation (user spcifc key)  is called as TXN
+
+execution which is NOT involved in signature validation (user specific key)  is called as Message
+
+
+two diff smart contracts running in the network:
+------------------------------------------------
+
+
+
+
+1. CBDC token contract     - CTOKEN - 09JKJJKBKJ907098709789 --- 200 USD TO 100 ETH  (txn)
+
+ Makes a call to next contract which is below
+ 
+2. Payment token contract  - PTOKEN - 98-098BVJHBJHBHJBJBBJK --- 200 USD and delivers 100 ETH to this payment contract
+
+IPFS: metadata details on decentralized applications
+------
+
+{
+   contract : 989jhkjjkjkn
+   nanem    : token contract - erc20
+   date of deployment :
+   address :
+}
+
+unique content id ---- 756567bjbhbjhbjhbhjbjkhszdf9809809
+
+FTP: Swarm
+-----------
+
+250mb to user1 --> bee
+
+signature/identity valdiations ---- > clef
+
+10 15 20 10 15 20 ------- 8789787
+
+user1: 10 15 20 10 15 20 
+
+hash - 8789787 
+
+valid and stored in the node
+
+
+Whisper protocol: how nodes talk to each other
+----------------------------------------------
+
+
+
+CAP Theorem:
+--------------
+
+consistency, availabilty and partiontioning
+
+availability, partioning ----> consistecy --->> latency 
+
+
+write ---> compile ---> deploy ---> run uni tests
+
+
+txn fee is involved for each n every txn we perform on ethereum
+ 1. fund transfer
+ 2. deploying smart contracts --- we need to pay some gas fee
+
+
+
+pseudo code(high level) for additon on two numbers:
+
+
+
+ a. pragma
+ b. contract
+ c. declare 2 nums
+ d. add func to accept nums from user input (uint256 x)
+ d. function to add nums
+
+public --- it is access to everyone
+
+private --- it is access to only owner/func within the contract
+
+view -- it does perform only read only operations on the state value
+
+
+1. write code
+2. identifiers
+
+3. gas optimizations
+
+Project folder:
+---------------
+
+ 1. Contracts - in whicn we write .sol/ solidytty code
+ 2. Deployment - write deployment scripts to deploy to diff test/production networks
+ 3. test --- write unit tests for coverage
+ 4. configurations ---- we create config files required for project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
