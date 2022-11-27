@@ -1,0 +1,1236 @@
+mkdir ---> creates a directory/folder in linux
+cd ---> change directory
+
+
+https://docs.infura.io/infura/tutorials/ethereum/deploy-a-contract-using-truffle
+
+https://docs.ipfs.tech/install/command-line/
+
+https://geth.ethereum.org/
+
+https://web3js.readthedocs.io/en/v1.8.1/getting-started.html#adding-web3-js
+
+
+
+migration -->
+contract  -->
+test      -->
+scripts   -->
+
+truffle unbox Metacoin
+
+we create new .sol file for addnum smart contract
+
+nano - test editor command
+
+CTRL + X to save changes
+
+
+Remix ---> user fiendly
+
+
+Truffle/Hardhat ----> developer friendly
+
+7.45 to 8.30 ---> truffle video
+
+
+Remix -- GUI
+
+Truffle -- command line
+
+Ganache -- GUI (truffle for smart contract deployments)
+
+Hardhat -- command line
+
+networks:
+
+1. production      ----> 1
+2. test networks   ---->
+  a. rinkbey       - 5
+  b. goreli        - 6
+  c. kovan         - 553
+  d. sepolia       - 1133
+3. private networks ----> 789
+4. Ganache          ----> 5777
+
+http://127.0.0.1:7545 --- http server listening on port 7545 for Ganache
+
+
+
+create a Metamask account --- done
+generate few address in metamask --- done
+add Ganache instance in metamask ---
+load accounts from Ganache to metamask
+
+
+
+farm version release figure lonely kite cage trophy property strong kangaroo labor
+
+
+
+sudo apt-get install software-properties-common
+
+sudo add-apt-repository -y ppa:ethereum/ethereum
+
+sudo apt-get update
+
+sudo apt-get install ethereum
+
+geth version
+
+
+a.) Run geth to connect/start blockchain with config file
+
+
+1. create new account
+
+geth --datadir ethdata account new
+
+admin/miner account -  0xcd82aA4978D044eC2e5c6e8A5128c93D2dC160eF
+
+2. creating genesis file
+
+  nano genesis.json
+
+3. start the network with genesis.json
+
+geth --datadir=”ethdata” init genesis.json
+
+4. geth --datadir=”ethdata” --networkid 15 --nodiscover --rpc --rpcport “8000” --rpccorsdomain “*” --rpcapi “eth,net,web3,miner,debug,personal,rpc” --networkid 1999 console
+
+
+Frontend applications ----> web3.js ----> Ethereum blockchain
+
+GETH/Parity to integrate our frontend apps
+
+
+UI ---> Button --> request the balance of a user web3.js
+
+user is requestimg for balance
+
+web3.js
+
+web3.eth 
+
+web3.eth.getBalance(account id)
+
+network id is used to diff whicn eth blockchain we are connected
+
+web3.js
+
+web3.net 
+
+web3.net.getid
+
+
+
+UI ----> web3.js (web3.eth) ----> (web3.eth.getBalance["0x6175751A81836a8c6CdDc820080700B72Ff64E38"] ----->  1290000000000000000000000000
+
+web3.utils (convert Gwei to eth) --- 1290000000000000 ----> 129 ETH format
+
+
+
+web3.eth
+web3.personal
+web3.utils
+web3.givenproviders
+web3.modules
+
+
+
+ 129 eth ----> Balance object (web3.js) ----> UI
+
+
+
+
+NFT: Non fungible tokens ERC721
+
+func
+ checkownership()
+ getbalance()
+ create()
+ transfer()
+
+
+
+ get owner details of this NFT id 7678ghghukgkhug --- jaga
+
+
+Digitla cert ----> 7678ghghukgkhug
+
+{
+   name : jagadeesh
+   stream : BE
+   marks: 70
+   owner : jagadeesh
+   issuer : iitk
+}
+
+
+{
+   name : jagadeesh
+   prop : 123
+   year of purchase : 2005
+   value: 50 lacs
+   current owner: jaga
+}
+
+
+
+
+2020 ---> Ravi
+
+{
+   name : jagadeesh
+   prop : 123
+   year of purchase : 2005
+   value: 50 lacs
+   current owner: jaga
+}
+
+{
+   name : Ravi
+   prop : 123
+   year of purchase : 2020
+   value: 80 lacs
+   current owner: Ravi
+   prev owner: jaga
+}
+
+
+
+
+func 
+
+1. query latest entry 
+2. query entire hist of the ledger
+
+2022 ravi ----> kamal
+
+{
+   name : jagadeesh
+   prop : 123
+   year of purchase : 2005
+   value: 50 lacs
+   current owner: jaga
+}
+
+{
+   name : Ravi
+   prop : 123
+   year of purchase : 2020
+   value: 80 lacs
+   current owner: Ravi
+   prev owner: jaga
+}
+
+
+{
+   name : kamal
+   prop : 123
+   year of purchase : 2022
+   value: 1.5 CR 
+   current owner: Kamal
+   prev owner: ravi
+}
+
+
+
+FT:  Fungible tokens  ERC20
+ getbalance()
+ create()
+ transfer()
+
+
+truffle, GETH
+
+
+
+From Me to Everyone 07:53 PM
+nano addnum.sol
+From varshaz2017 . to Everyone 07:54 PM
+sir am lost
+From Me to Everyone 07:54 PM
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
+contract addNums 
+{
+
+   uint256 firstnum;
+   uint256 secondnum;
+   uint256 finalnum;
+
+    function setFirstnum(uint256 x) public
+    {
+        firstnum = x;
+    }
+
+    function setSecondnum(uint256 y) public
+    {
+        secondnum = y;
+    }
+
+    function addNum() public returns (uint256)
+    {
+        finalnum = firstnum + secondnum;
+        return finalnum;
+// system.out.println
+    }
+}
+From sonalichowdhury34@gmail.com . to Everyone 07:56 PM
+its not opening
+From Velmurugan J . to Everyone 07:57 PM
+why we are using nano , cant we use vim ?
+From saradhy555 . to Everyone 07:57 PM
+it is 2.5.3 for me
+not 6.4
+From Velmurugan J . to Everyone 07:57 PM
+ok, how to save it ?
+From saalamir . to Everyone 07:58 PM
+Can we but the name of contract different than the file name?
+From Ranjithkumar Ramakrishnan . to Everyone 07:58 PM
+can I use my operating system instead of labs?
+From saalamir . to Everyone 07:58 PM
+Put*
+From rkbaggiaraj2009 . to Me (Direct Message) 08:00 PM
+I couldn't hear your voice. No sound 
+From Nivedita Marathe . to Everyone 08:00 PM
+s
+clear
+From Learner success manager to Everyone 08:00 PM
+yes
+From Vinoth Jagadeesan . to Everyone 08:00 PM
+very clear
+From saradhy555 . to Everyone 08:00 PM
+s
+From arjunank . to Everyone 08:01 PM
+i could not see your contract folder
+From rkbaggiaraj2009 . to Me (Direct Message) 08:03 PM
+I have logged in mobile. No audio what to do?
+From sairam1806 . to Everyone 08:03 PM
+can u repeat once..
+from Migrations folder
+From Velmurugan J . to Everyone 08:05 PM
+is it case sensitive ?
+From Vinoth Jagadeesan . to Everyone 08:08 PM
+unable to go to migrations folder
+let me try once agein
+From saradhy555 . to Everyone 08:09 PM
+created directory in my system so i should create it again
+in lab
+From somasfin . to Everyone 08:09 PM
+YES
+From Me to Everyone 08:10 PM
+1_deploy_contracts.js
+From Velmurugan J . to Everyone 08:13 PM
+s
+From somasfin . to Everyone 08:13 PM
+yes
+From saradhy555 . to Everyone 08:13 PM
+please proceed i will do it tommorrow watching recording
+From arjunank . to Me (Direct Message) 08:13 PM
+i can see your coding file
+From Nivedita Marathe . to Everyone 08:13 PM
+please proceed sir 
+Me to arjunank . (Direct Message) 08:14 PM
+ll
+From Ranjithkumar Ramakrishnan . to Everyone 08:14 PM
+you have any document for this steps?
+From Nivedita Marathe . to Everyone 08:14 PM
+sir it wil be easy if you can send write up step by step please 
+From Ranjithkumar Ramakrishnan . to Everyone 08:14 PM
+*these
+From Nivedita Marathe . to Everyone 08:17 PM
+you can upload in notes section too 
+thank you sir 
+sir remix was easier 
+compared to truffle 
+sir are they useful in Enterprise Blockchain as well 
+From Vinoth Jagadeesan . to Everyone 08:17 PM
+Truffle is command oriented.. its little tricky 
+From Velmurugan J . to Everyone 08:17 PM
+yes
+facing same issue
+From Nivedita Marathe . to Everyone 08:18 PM
+for non techis very much tricky :))
+From sunilsalkapuram . to Everyone 08:18 PM
+same - slice undefined
+From Shashwitha to Everyone 08:18 PM
+version 0.8.4 will work wotjout error
+From sunilsalkapuram . to Everyone 08:20 PM
+we need to make pragma change as well
+??
+From sairam1806 . to Everyone 08:20 PM
+plz send .js file content..
+to change the version
+From Nivedita Marathe . to Everyone 08:22 PM
+sir please write steps wise notes for us to practise later 
+yes very much user friendly even for non techis 
+From saradhy555 . to Everyone 08:23 PM
+10 q
+From Vinoth Jagadeesan . to Everyone 08:23 PM
+I lost after contracts
+From Nivedita Marathe . to Everyone 08:23 PM
+sir does this framework also helpful in enterprise blockchain
+From Vinoth Jagadeesan . to Everyone 08:23 PM
+will try later
+From Ranjithkumar Ramakrishnan . to Everyone 08:23 PM
+Recordings 4 hours, it's hard to watch again. 
+From Nivedita Marathe . to Everyone 08:24 PM
+sir is this framework also used in enterprise blockchain
+From Vinoth Jagadeesan . to Everyone 08:24 PM
+yes
+From Ranjithkumar Ramakrishnan . to Everyone 08:24 PM
+yes
+From arjunank . to Me (Direct Message) 08:24 PM
+what is .js?
+From Nivedita Marathe . to Everyone 08:25 PM
+Ethereum Public blockchain rights 
+these frameworks 
+From arjunank . to Me (Direct Message) 08:25 PM
+inside the js file  there is no java script syntax
+From Nivedita Marathe . to Everyone 08:25 PM
+are used 
+From Velmurugan J . to Everyone 08:26 PM
+are we going to learn deployment in truffle ?
+From Nivedita Marathe . to Everyone 08:26 PM
+s 
+From sonalichowdhury34@gmail.com . to Everyone 08:26 PM
+yes
+From saradhy555 . to Everyone 08:26 PM
+sss
+From Nivedita Marathe . to Everyone 08:26 PM
+yes 
+sir 
+From Shashwitha to Everyone 08:26 PM
+yes
+From sunilsalkapuram . to Everyone 08:26 PM
+yes. 
+From Dinesh to Everyone 08:26 PM
+sure
+From Ranjithkumar Ramakrishnan . to Everyone 08:26 PM
+yes
+From sairam1806 . to Everyone 08:26 PM
+yes
+From sairamraman . to Everyone 08:26 PM
+yes please proceed
+From Vinoth Jagadeesan . to Everyone 08:29 PM
+yes
+From Nivedita Marathe . to Everyone 08:33 PM
+s
+s
+From Vinoth Jagadeesan . to Everyone 08:33 PM
+yeah
+From Nivedita Marathe . to Everyone 08:33 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 08:34 PM
+yes
+From Vinoth Jagadeesan . to Everyone 08:34 PM
+yes
+From saradhy555 . to Everyone 08:34 PM
+its not same for me
+after double click window opened is different
+From sairamraman . to Everyone 08:34 PM
+Where do you see Ganache app
+From Nivedita Marathe . to Everyone 08:34 PM
+its in lab
+on desktop
+From saradhy555 . to Everyone 08:34 PM
+in lab
+From sairamraman . to Everyone 08:35 PM
+Ok got you
+got you
+From arjunank . to Me (Direct Message) 08:39 PM
+I can see only in support ganache welcome screen
+From Vinoth Jagadeesan . to Everyone 08:41 PM
+is is 7454 or 7545?
+but you typed 7454
+From Nivedita Marathe . to Everyone 08:41 PM
+typo
+From Vinoth Jagadeesan . to Everyone 08:41 PM
+ok.. cool
+From saradhy555 . to Everyone 08:42 PM
+exactly...i tried the same
+it worked
+From arjunank . to Me (Direct Message) 08:42 PM
+yes..worked..
+From Vinoth Jagadeesan . to Everyone 08:46 PM
+done
+From sairam1806 . to Everyone 08:46 PM
+plz repat
+From Dinesh to Everyone 08:46 PM
+yes
+From Me to Everyone 08:47 PM
+https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js
+From Nivedita Marathe . to Everyone 08:47 PM
+yes
+done 
+sir 
+From saradhy555 . to Everyone 08:47 PM
+unable to go back from ganache
+From Nivedita Marathe . to Everyone 08:48 PM
+provider not connected
+it says 
+From Vinoth Jagadeesan . to Everyone 08:48 PM
+Not possible to connect to Ganache Provider. Make sure the provider is running, a connection is open (via IPC or RPC) or that the provider plugin is properly configured.
+
+From saradhy555 . to Everyone 08:48 PM
+no option like that
+From Velmurugan J . to Everyone 08:49 PM
+ganache shows different port
+From Nivedita Marathe . to Everyone 08:49 PM
+sir done 
+changed to 7545
+now ok 
+From Vinoth Jagadeesan . to Everyone 08:49 PM
+yes. working
+From Me to Everyone 08:49 PM
+change port from 8545 to 7545 in remix browser pop up
+From Nivedita Marathe . to Everyone 08:49 PM
+yes
+From Vinoth Jagadeesan . to Everyone 08:50 PM
+correct
+From Nivedita Marathe . to Everyone 08:51 PM
+sir remix and ganache inter connected 
+is it
+From Vinoth Jagadeesan . to Everyone 08:51 PM
+its quite interesting 
+From Ranjithkumar Ramakrishnan . to Everyone 08:51 PM
+until this works. 
+but when I click deploy it's shows error
+From arjunank . to Me (Direct Message) 08:51 PM
+Error while connecting to the provider, provider not connected
+Me to arjunank . (Direct Message) 08:52 PM
+8545 to 7545
+From Vinoth Jagadeesan . to Everyone 08:52 PM
+once we learn things. we can play with it
+From arjunank . to Me (Direct Message) 08:53 PM
+where I can change the port
+yes
+From Nivedita Marathe . to Everyone 08:53 PM
+i was able to deploy iy 
+From Vinoth Jagadeesan . to Everyone 08:53 PM
+yes
+From saradhy555 . to Everyone 08:53 PM
+how to getrid of full screen in linux
+From Vinoth Jagadeesan . to Everyone 08:54 PM
+I am doing with Owner.Sol
+From Nivedita Marathe . to Everyone 08:54 PM
+me too
+From kamal78 . to Everyone 08:55 PM
+0xaF082Dca623c3D2Fe30D2013F48A698BcBb4dCdB
+From Vinoth Jagadeesan . to Everyone 08:55 PM
+yeah
+From kamal78 . to Everyone 08:55 PM
+chalu gadi e ho
+From ravivaishnav . to Everyone 08:56 PM
+ha moj
+From Nivedita Marathe . to Everyone 08:57 PM
+done sir 
+From saradhy555 . to Everyone 08:57 PM
+in lab i dont have minimize option
+From Nivedita Marathe . to Everyone 08:57 PM
+yes
+From saradhy555 . to Everyone 08:57 PM
+there is no such 
+sorry to say
+again and again
+From arjunank . to Me (Direct Message) 08:58 PM
+Currently you have no contract instances to interact with.
+From saradhy555 . to Everyone 08:58 PM
+tried that as well
+tan q
+From Nivedita Marathe . to Everyone 08:58 PM
+s
+go ahead 
+From Shashwitha to Everyone 08:58 PM
+yes
+From saradhy555 . to Everyone 08:58 PM
+ant desk is fine sir?
+From sonalichowdhury34@gmail.com . to Everyone 08:58 PM
+s
+From Vinoth Jagadeesan . to Everyone 08:58 PM
+Yes
+From sunilsalkapuram . to Everyone 08:58 PM
+yes. 
+From Dinesh to Everyone 08:58 PM
+yes fine
+From sonalichowdhury34@gmail.com . to Everyone 08:58 PM
+yes
+From Nivedita Marathe . to Everyone 09:01 PM
+s
+s
+From sairamraman . to Everyone 09:01 PM
+yes
+From Velmurugan J . to Everyone 09:06 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 09:06 PM
+yes
+From Dinesh to Everyone 09:06 PM
+yes
+From sairam1806 . to Everyone 09:06 PM
+yes
+From saradhy555 . to Everyone 09:06 PM
+for ganache part i am done
+remix i canot do as i cant minimize
+From sonalichowdhury34@gmail.com . to Everyone 09:07 PM
+yes
+From Dinesh to Everyone 09:07 PM
+yes i am using Metamask
+for NFT...
+From sonalichowdhury34@gmail.com . to Everyone 09:07 PM
+same here
+From saradhy555 . to Everyone 09:08 PM
+can i do it off lab?
+Me to arjunank . (Direct Message) 09:09 PM
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+From Nivedita Marathe . to Everyone 09:09 PM
+link 
+plz
+From saradhy555 . to Everyone 09:09 PM
+i cannot do anything in lab
+Me to arjunank . (Direct Message) 09:09 PM
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+From Nivedita Marathe . to Everyone 09:09 PM
+link
+From Me to Everyone 09:09 PM
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+From saradhy555 . to Everyone 09:09 PM
+10x
+From Nivedita Marathe . to Everyone 09:10 PM
+s
+From sairamraman . to Everyone 09:10 PM
+Yes
+From Vinoth Jagadeesan . to Everyone 09:10 PM
+doe
+done
+From Nivedita Marathe . to Everyone 09:10 PM
+yes
+From sonalichowdhury34@gmail.com . to Everyone 09:10 PM
+yes
+From saradhy555 . to Everyone 09:10 PM
+ss
+From Velmurugan J . to Everyone 09:11 PM
+created its connected to main net
+From sonalichowdhury34@gmail.com . to Everyone 09:14 PM
+yes
+From Vinoth Jagadeesan . to Everyone 09:14 PM
+yes
+From Nivedita Marathe . to Everyone 09:14 PM
+s
+From sairamraman . to Everyone 09:14 PM
+Yes sir
+From saradhy555 . to Everyone 09:14 PM
+sss
+From sunilsalkapuram . to Everyone 09:15 PM
+yup
+From Dinesh to Everyone 09:15 PM
+yes opened
+From ravivaishnav . to Everyone 09:15 PM
+s
+From Shashwitha to Everyone 09:15 PM
+yes
+From sairam1806 . to Everyone 09:15 PM
+yes
+From somasfin . to Everyone 09:15 PM
+yes
+From kush.jain5724@gmail.com . to Everyone 09:15 PM
+yes sir
+From Nivedita Marathe . to Everyone 09:15 PM
+s
+From sntc1509099 . to Everyone 09:15 PM
+s
+From kamal78 . to Everyone 09:15 PM
+yes
+From saalamir . to Everyone 09:15 PM
+Yes
+From varshaz2017 . to Everyone 09:15 PM
+ys
+From saradhy555 . to Everyone 09:19 PM
+for me it is showing couldnot fetch
+as i am doing off lab
+From kamal78 . to Everyone 09:19 PM
+ok
+From saradhy555 . to Everyone 09:19 PM
+okay
+From Me to Everyone 09:19 PM
+https://trufflesuite.com/ganache/
+From saradhy555 . to Everyone 09:19 PM
+DONE
+From Nivedita Marathe . to Everyone 09:19 PM
+s
+From sairamraman . to Everyone 09:23 PM
+Yes Sir Done.
+Done Sir
+From Vinoth Jagadeesan . to Everyone 09:24 PM
+cant we do all together?
+Mass upload?
+From saradhy555 . to Everyone 09:24 PM
+what will be the chain id for me
+From sairamraman . to Everyone 09:25 PM
+So we can do transaction also for these accounts through Meta mask
+From Me to Everyone 09:25 PM
+1337
+From Nivedita Marathe . to Everyone 09:25 PM
+s
+From Vinoth Jagadeesan . to Everyone 09:25 PM
+yes
+From sairamraman . to Everyone 09:25 PM
+Yes Sir
+From kamal78 . to Everyone 09:25 PM
+please let me add ganache in metamask
+From sonalichowdhury34@gmail.com . to Everyone 09:25 PM
+yes
+From Ranjithkumar Ramakrishnan . to Everyone 09:25 PM
+I can't able to transfer
+Insufficient funds for gas
+
+From saradhy555 . to Everyone 09:26 PM
+done 
+From Dinesh to Everyone 09:26 PM
+yes added 3-Accounts
+From kamal78 . to Everyone 09:26 PM
+ok
+From saradhy555 . to Everyone 09:26 PM
+did it in windows ganache
+From Velmurugan J . to Everyone 09:26 PM
+0xff602DED109b5C1e73e4E89B823812D461EecA9D
+From saradhy555 . to Everyone 09:26 PM
+0x0Cc8eACB928de368CfDdfAD3d732d3d08897FEf5
+From logan to Everyone 09:26 PM
+0xE5Ae37E4ce122EcD3F1de7a2EEC04D49C378cf4B
+From Vinoth Jagadeesan . to Everyone 09:27 PM
+0xcC33Dc6823BDe8ab9403baDCDA62e593D05D237b
+From sairamraman . to Everyone 09:28 PM
+Where did you get that Metamask Address
+From Velmurugan J . to Everyone 09:28 PM
+saradhy transfered 20ETH to your address
+From sairamraman . to Everyone 09:28 PM
+0xC63022ED4B20846d022813d2caAD99Da63efC185
+From Dinesh to Everyone 09:28 PM
+Vel i send 100ETH to your Account
+From sairamraman . to Everyone 09:31 PM
+got it
+SENDER ADDRESS
+0xC63022ED4B20846d022813d2caAD99Da63efC185
+TO CONTRACT ADDRESS
+0x0Cc8eACB928de368CfDdfAD3d732d3d08897FEf5
+100 ETH
+From saradhy555 . to Everyone 09:31 PM
+in ganache it is no showing the balance with out deducting the gas fee for me
+okay
+From Nivedita Marathe . to Everyone 09:32 PM
+s
+clear 
+From sonalichowdhury34@gmail.com . to Everyone 09:32 PM
+yes
+From Shashwitha to Everyone 09:32 PM
+yes
+From Vinoth Jagadeesan . to Everyone 09:32 PM
+s
+From sairam1806 . to Everyone 09:32 PM
+no
+From ravivaishnav . to Everyone 09:32 PM
+yes
+From Nivedita Marathe . to Everyone 09:32 PM
+s
+s
+From sairamraman . to Everyone 09:32 PM
+Yes Sir
+From Nivedita Marathe . to Everyone 09:32 PM
+s
+s
+s
+From Dinesh to Everyone 09:32 PM
+yes gud
+From sunilsalkapuram . to Everyone 09:32 PM
+yup. clear
+From Nivedita Marathe . to Everyone 09:32 PM
+s
+s
+From Ranjithkumar Ramakrishnan . to Everyone 09:32 PM
+no
+From Nivedita Marathe . to Everyone 09:32 PM
+s
+s
+s
+s
+From Ranjithkumar Ramakrishnan . to Everyone 09:32 PM
+How to import json?
+From Nivedita Marathe . to Everyone 09:32 PM
+need to add all pvt leys 
+keys
+From saradhy555 . to Everyone 09:33 PM
+0x90ce3c6228c1f20fa99c47e4702c7bc07214533936df1b0736c08d26f594af61
+From Ranjithkumar Ramakrishnan . to Everyone 09:33 PM
+so we can't export?
+From Nivedita Marathe . to Everyone 09:33 PM
+import
+From Ranjithkumar Ramakrishnan . to Everyone 09:33 PM
+ok
+From Nivedita Marathe . to Everyone 09:34 PM
+sir can we break
+ok
+From kamal78 . to Everyone 09:34 PM
+I m  travelling in car
+From Nivedita Marathe . to Everyone 09:34 PM
+sir same one 
+right 
+From saradhy555 . to Everyone 09:34 PM
+today it is far better than yesterday though my lab session is not active
+From Nivedita Marathe . to Everyone 09:35 PM
+lab
+sir same lab
+session 
+right 
+that we were using now 
+ok ok 
+From kamal78 . to Everyone 09:35 PM
+cant typr or click properly :}
+From Nivedita Marathe . to Everyone 09:35 PM
+ok ok 
+ok sir
+From Vinoth Jagadeesan . to Everyone 09:35 PM
+ok
+From saradhy555 . to Everyone 09:35 PM
+can you check with my lab sir?
+From kamal78 . to Everyone 09:35 PM
+ok
+From saradhy555 . to Everyone 09:35 PM
+anydesk
+From Nivedita Marathe . to Everyone 09:35 PM
+yes sir 
+From saradhy555 . to Everyone 09:35 PM
+okay sir
+From kamal78 . to Everyone 09:36 PM
+please 9.50
+From Nivedita Marathe . to Everyone 09:36 PM
+ok
+From sonalichowdhury34@gmail.com . to Everyone 09:36 PM
+ok
+From Nivedita Marathe . to Everyone 09:36 PM
+ok ok 
+From saradhy555 . to Everyone 09:36 PM
+done 
+From Nivedita Marathe . to Everyone 09:52 PM
+s
+From saradhy555 . to Everyone 09:52 PM
+sss
+From sonalichowdhury34@gmail.com . to Everyone 09:52 PM
+S
+From arjunank . to Me (Direct Message) 09:52 PM
+Yes
+From sairamraman . to Everyone 09:52 PM
+Yes Sir
+From varshaz2017 . to Everyone 09:52 PM
+s
+From Me to Everyone 09:53 PM
+pls do open ur lab session
+and make it active
+From saradhy555 . to Everyone 09:53 PM
+can you check my lab sir?
+From sairamraman . to Everyone 09:54 PM
+Yes Lab is active
+From saradhy555 . to Everyone 09:54 PM
+active got struck with ganache
+From sairamraman . to Everyone 09:54 PM
+Terminal opened
+From saradhy555 . to Everyone 09:54 PM
+i can only see ganache'nothing else
+From varshaz2017 . to Everyone 09:55 PM
+very slow 
+From saradhy555 . to Everyone 09:55 PM
+done
+From varshaz2017 . to Everyone 09:58 PM
+sir ur voice is echoin
+From ravivaishnav . to Everyone 09:58 PM
+s
+From sairamraman . to Everyone 09:58 PM
+yes sir
+From saradhy555 . to Everyone 10:00 PM
+s
+can everyone get it?
+From arjunank . to Me (Direct Message) 10:05 PM
+should download inside the Lab?
+From saradhy555 . to Everyone 10:05 PM
+5.16
+From Vinoth Jagadeesan . to Everyone 10:05 PM
+https://accenture.lms.simplilearn.com/courses/5212/PG-BC:-Fundamentals-of-Blockchain/syllabus
+From sairamraman . to Everyone 10:05 PM
+5.16
+From Vinoth Jagadeesan . to Everyone 10:05 PM
+kk
+From Me to Everyone 10:06 PM
+sudo apt-get install software-properties-common
+From sairamraman . to Everyone 10:07 PM
+i an unable to paste
+should i manually type it
+From saradhy555 . to Everyone 10:08 PM
+ctrl+shift +v will do
+From sairamraman . to Everyone 10:09 PM
+thanks Saradhu
+From Me to Everyone 10:09 PM
+sudo add-apt-repository -y ppa:ethereum/ethereum
+From sairamraman . to Everyone 10:10 PM
+yes
+Yes Sir
+From sonalichowdhury34@gmail.com . to Everyone 10:10 PM
+S
+From Nivedita Marathe . to Everyone 10:10 PM
+s
+From ravivaishnav . to Everyone 10:10 PM
+no issue
+From Me to Everyone 10:11 PM
+sudo apt-get update
+From saradhy555 . to Everyone 10:12 PM
+with out knowing the importance of each step i am done with installation process
+as instructed in given assist file
+From Nivedita Marathe . to Everyone 10:12 PM
+:))
+From Me to Everyone 10:14 PM
+sudo apt-get install ethereum
+geth version
+From Vinoth Jagadeesan . to Everyone 10:14 PM
+yes. done
+From sairamraman . to Everyone 10:14 PM
+1.9.15
+ok
+From Nivedita Marathe . to Everyone 10:15 PM
+s
+From saradhy555 . to Everyone 10:15 PM
+ss
+From ravivaishnav . to Everyone 10:15 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 10:15 PM
+DONE
+From arjunank . to Me (Direct Message) 10:15 PM
+yes
+From sairamraman . to Everyone 10:16 PM
+Yes Sir
+sorry come again
+From Nivedita Marathe . to Everyone 10:17 PM
+asking password
+From Me to Everyone 10:18 PM
+geth --datadir ethdata account new
+From saradhy555 . to Everyone 10:19 PM
+not letting me type there
+in terminal
+From sairamraman . to Everyone 10:21 PM
+So we are creating new account using Geth
+From varshaz2017 . to Everyone 10:21 PM
+first blok
+From Shashwitha to Everyone 10:21 PM
+intial block information
+From sairamraman . to Everyone 10:23 PM
+we should type - genesis.json ?
+From Me to Everyone 10:23 PM
+nano genesis.json
+From saradhy555 . to Everyone 10:23 PM
+lab got struck again
+From sairamraman . to Everyone 10:24 PM
+Copied the coding 
+From saradhy555 . to Everyone 10:24 PM
+network is fine sir
+From sairamraman . to Everyone 10:24 PM
+after that?
+From somasfin . to Everyone 10:24 PM
+yes
+From arjunank . to Me (Direct Message) 10:24 PM
+yes
+From Vinoth Jagadeesan . to Everyone 10:24 PM
+yes
+From saradhy555 . to Everyone 10:25 PM
+should i terminate and launch again?
+From Me to Everyone 10:25 PM
+geth --datadir=”ethdata” init genesis.json
+From sairamraman . to Everyone 10:26 PM
+Sir after adding the code what should we do>
+From Me to Everyone 10:26 PM
+geth --datadir=”ethdata” init genesis.json
+From Vinoth Jagadeesan . to Everyone 10:27 PM
+getting error
+From somasfin . to Everyone 10:28 PM
+ERROR[11-27|16:57:46.130] Failed to enumerate USB devices          hub=ledger vendor=11415 failcount=1 err="failed to initialize libusb: libusb: unknown error [code -99]"
+
+From ravivaishnav . to Everyone 10:29 PM
+Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+ok sir
+From sairamraman . to Everyone 10:30 PM
+ok
+From Vinoth Jagadeesan . to Everyone 10:31 PM
+invalid value "“8000”" for flag -rpcport: parse error
+From saradhy555 . to Everyone 10:32 PM
+lab session is not loading for me .....as you said it is due to network issue. but rest are doing fine IDK
+From ravivaishnav . to Everyone 10:39 PM
+no
+From sairamraman . to Everyone 10:40 PM
+ i removed the colons 8000
+it is working i think
+From saradhy555 . to Everyone 10:42 PM
+invalid value "“8000”" for flag -rpcport: parse error
+
+From Nivedita Marathe . to Everyone 10:43 PM
+s
+From ravivaishnav . to Everyone 10:43 PM
+s
+From sonalichowdhury34@gmail.com . to Everyone 10:43 PM
+ok
+From Nivedita Marathe . to Everyone 10:43 PM
+s
+s
+s
+ss
+From Ranjithkumar Ramakrishnan . to Everyone 10:43 PM
+ok
+From Nivedita Marathe . to Everyone 10:43 PM
+s
+From Dinesh to Everyone 10:43 PM
+ok fine
+From Vinoth Jagadeesan . to Everyone 10:43 PM
+no worries. we can see nxt weerk
+week
+From Velmurugan J . to Everyone 10:45 PM
+geth --datadir="ethdata" --networkid 15 --nodiscover --rpc --rpcport "8000" --rpccorsdomain "*" --rpcapi "eth,net,web3,miner,debug,personal,rpc" --networkid 1999 console
+try this
+its working
+From Nivedita Marathe . to Everyone 10:49 PM
+sir cant see screen
+From ravivaishnav . to Everyone 10:49 PM
+We can see properly 
+From Me to Everyone 10:50 PM
+https://web3js.readthedocs.io/en/v1.8.1/
+From kush.jain5724@gmail.com . to Everyone 10:50 PM
+clear
+From ravivaishnav . to Everyone 10:50 PM
+yes clear
+From Vinoth Jagadeesan . to Everyone 11:08 PM
+clear
+From ravivaishnav . to Everyone 11:08 PM
+no
+From sonalichowdhury34@gmail.com . to Everyone 11:08 PM
+clear
+From Dinesh to Everyone 11:08 PM
+fine
+From ravivaishnav . to Everyone 11:12 PM
+yes
+From saradhy555 . to Everyone 11:12 PM
+sss
+From Vinoth Jagadeesan . to Everyone 11:12 PM
+superb
+From Nivedita Marathe . to Everyone 11:12 PM
+s
+From Dinesh to Everyone 11:12 PM
+k
+From Vinoth Jagadeesan . to Everyone 11:15 PM
+yes
+From Nivedita Marathe . to Everyone 11:15 PM
+s
+From ravivaishnav . to Everyone 11:15 PM
+clear
+From Vinoth Jagadeesan . to Everyone 11:21 PM
+it can be sell to others? right
+what is ERC20 and ERC721?
+From Dinesh to Everyone 11:22 PM
+using some recomended platforms to sell NFT...Like Opensea...
+From ravivaishnav . to Everyone 11:23 PM
+it's token type @Vinoth
+From Vinoth Jagadeesan . to Everyone 11:23 PM
+ok
+From ravivaishnav . to Everyone 11:26 PM
+Oh... I made a huge profit :P
+From kamal78 . to Everyone 11:29 PM
+I grab the opportunity to earn more..... :)
+From saradhy555 . to Everyone 11:29 PM
+congratulation
+From ravivaishnav . to Everyone 11:30 PM
+:D
+
+From kush.jain5724@gmail.com . to Everyone 11:33 PM
+lets do it
+From Nivedita Marathe . to Everyone 11:33 PM
+ok
+From kamal78 . to Everyone 11:33 PM
+yse
+From Vinoth Jagadeesan . to Everyone 11:33 PM
+yes.
+From sonalichowdhury34@gmail.com . to Everyone 11:33 PM
+ok
+From Nivedita Marathe . to Everyone 11:33 PM
+ok
+From Vinoth Jagadeesan . to Everyone 11:33 PM
+will finish
+From sairamraman . to Everyone 11:33 PM
+  Ok
+From kush.jain5724@gmail.com . to Everyone 11:33 PM
+its like a recap
+From saradhy555 . to Everyone 11:33 PM
+kkk
+From Vinoth Jagadeesan . to Everyone 11:33 PM
+today
+From ravivaishnav . to Everyone 11:34 PM
+A
+From sairamraman . to Everyone 11:34 PM
+A
+From saradhy555 . to Everyone 11:34 PM
+a
+From Velmurugan J . to Everyone 11:34 PM
+Dapp
+From ravivaishnav . to Everyone 11:34 PM
+DApp
+From Nivedita Marathe . to Everyone 11:34 PM
+a
+From kamal78 . to Everyone 11:34 PM
+A
+From ravivaishnav . to Everyone 11:34 PM
+256
+From varshaz2017 . to Everyone 11:34 PM
+256
+From saradhy555 . to Everyone 11:34 PM
+a
+From Nivedita Marathe . to Everyone 11:34 PM
+a
+From kamal78 . to Everyone 11:34 PM
+B
+From sonalichowdhury34@gmail.com . to Everyone 11:34 PM
+a
+From sairamraman . to Everyone 11:34 PM
+C
+From Nivedita Marathe . to Everyone 11:34 PM
+a
+a
+From Dinesh to Everyone 11:34 PM
+A
+From Vinoth Jagadeesan . to Everyone 11:34 PM
+a
+From Nivedita Marathe . to Everyone 11:34 PM
+a
+From Velmurugan J . to Everyone 11:34 PM
+A
+From sairamraman . to Everyone 11:34 PM
+A
+From Nivedita Marathe . to Everyone 11:34 PM
+a
+From baskaranvelu70@gmail.com . to Everyone 11:35 PM
+a
+From Velmurugan J . to Everyone 11:35 PM
+B
+From sairamraman . to Everyone 11:35 PM
+D
+From Velmurugan J . to Everyone 11:35 PM
+C
+From ravivaishnav . to Everyone 11:35 PM
+b
+From Velmurugan J . to Everyone 11:35 PM
+D
+From sonalichowdhury34@gmail.com . to Everyone 11:35 PM
+a
+From saradhy555 . to Everyone 11:35 PM
+b
+From ravivaishnav . to Everyone 11:35 PM
+Ropsten
+From varshaz2017 . to Everyone 11:35 PM
+b
+From Shashwitha to Everyone 11:35 PM
+b
+From Vinoth Jagadeesan . to Everyone 11:35 PM
+c
+From Velmurugan J . to Everyone 11:35 PM
+B,C,D
+From Nivedita Marathe . to Everyone 11:35 PM
+d
+From Dinesh to Everyone 11:35 PM
+B
+From sonalichowdhury34@gmail.com . to Everyone 11:35 PM
+b
+From sairamraman . to Everyone 11:35 PM
+B and D
+From saradhy555 . to Everyone 11:35 PM
+d
+From sonalichowdhury34@gmail.com . to Everyone 11:35 PM
+d
+From Nivedita Marathe . to Everyone 11:35 PM
+b
+From baskaranvelu70@gmail.com . to Everyone 11:35 PM
+d
+From kamal78 . to Everyone 11:35 PM
+B D
+From saradhy555 . to Everyone 11:35 PM
+bd
+From Vinoth Jagadeesan . to Everyone 11:35 PM
+k
+From ravivaishnav . to Everyone 11:35 PM
+A
+From baskaranvelu70@gmail.com . to Everyone 11:35 PM
+a c
+From varshaz2017 . to Everyone 11:35 PM
+a
+From Nivedita Marathe . to Everyone 11:35 PM
+a
+From ravivaishnav . to Everyone 11:36 PM
+how B?
+From kamal78 . to Everyone 11:36 PM
+A B
+From Nivedita Marathe . to Everyone 11:36 PM
+a
+From kamal78 . to Everyone 11:36 PM
+V
+From sairamraman . to Everyone 11:36 PM
+D
+From saradhy555 . to Everyone 11:36 PM
+b
+From Shashwitha to Everyone 11:36 PM
+b
+From sonalichowdhury34@gmail.com . to Everyone 11:36 PM
+b
+From baskaranvelu70@gmail.com . to Everyone 11:36 PM
+b
+From Nivedita Marathe . to Everyone 11:36 PM
+b
+From kamal78 . to Everyone 11:36 PM
+B
+From ravivaishnav . to Everyone 11:37 PM
+yes
+From Vinoth Jagadeesan . to Everyone 11:37 PM
+k
+From saradhy555 . to Everyone 11:37 PM
+s sir
+From Shashwitha to Everyone 11:37 PM
+yes
+From kamal78 . to Everyone 11:38 PM
+its ok sir take more time
+From Velmurugan J . to Everyone 11:38 PM
+miner.start() - works 
+From saradhy555 . to Everyone 11:39 PM
+truffle thing need to be discussed once
+apart from today it was very much clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
