@@ -1,0 +1,113 @@
+0xFd0f5a2c304dcC28d7a0403bAD42C052179485a4
+
+Install GET:
+-------------
+
+1. sudo apt-get install software-properties-common
+
+2. sudo add-apt-repository -y ppa:ethereum/ethereum
+
+3. sudo apt-get update
+
+4. sudo apt-get install ethereum
+
+5. geth version (1.9 or 1.10)
+
+
+
+Setting up GETH with genesis file
+----------------------------------
+
+
+1. Create genesis file using command - nano genesis.json
+----------------------
+
+copy the below contents into the genesis.json file
+
+CTRL + C and save the file
+
+{
+"nonce": "0x0000000000000042",
+"timestamp": "0x00",
+"parentHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
+"extraData": "0x00",
+"gasLimit": "0x8000000",
+"difficulty": "0x0400",
+"mixhash":"0x0000000000000000000000000000000000000000000000000000000000000000",
+"coinbase": "0x3333333333333333333333333333333333333333",
+"alloc": {
+},
+"config": {
+"chainId": 786,
+"homesteadBlock": 0,
+"eip150Block": 0,
+"eip155Block": 0,
+"eip158Block": 0
+}
+}
+
+
+Create new account:
+---------------------------
+geth --datadir ethdata account new
+
+you'll get a prompt to enter password. Type the password as password. retype th password for confirmation. Copy the address generated in the terminal.
+
+
+Create genesis file:
+-----------------------
+nano genesis.json
+
+then to get exit CTRL + X , then select 'Y'
+
+
+initializing genesis file:
+--------------------------
+
+geth --datadir=”ethdata” init genesis.json
+
+enable RPC port:
+-----------------
+
+geth --datadir=”ethdata” --networkid 15 --nodiscover --rpc --rpcport 8545 --rpccorsdomain “*” --rpcapi “eth,net,web3,miner,debug,personal,rpc” --networkid 1999 console
+
+sometimes the above command returns "flag provided but not declared. --rpc". In the case use the below command
+
+geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+
+Once the above command is executed it shows a javascript console.
+
+
+
+
+
+
+Execute below commands inside the console.
+
+1. miner.setEtherbase("your account")
+2. miner.start(8) -> let it run for 15 mins
+3. CTRL +  C and type exit
+4. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+5. web3.eth.getBalance("your address")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
