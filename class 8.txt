@@ -1,0 +1,195 @@
+(optional) Front end applications          ---> React/Angular
+(Mandatorty) API integrations                ---> Javascript (enterprise), web3.js and ethers.js (ethereum)
+(Mandatory) Business logic(smart contracts) ---> Scrypt(Bitcoin), Solidity (Ethereum), Java, Javascript, GO, Typescript (Etnerprise)
+(Mandatory) Databases                       ---> Embedded DB like (Level DB, Couch DB, Rocks DB, Pebble DB) -- Plain Key Value store Databases implemented on OS file system
+(Good to have) Container                    ---> Docker, Kubernetes
+(Good to have) DEVOPS                       ---> CI, CD, Gitlab, Cloud
+
+
+trade contract - 809709709-08098789687jjkkj8909
+
+healt care contract - 98797860-90980knnmm
+
+import ABI = ("809709709-08098789687jjkkj8909")
+import contract address = "0980928[09-0"
+
+Certificate life cycle:
+-------------------------
+
+1. Issuance - regster and gets certficates
+2. Revoke   - when the certificates are no longer valid (cert was malfucntioned, expired)
+3. Renew    - can be renewwed
+
+Channel: sbi, icici
+ MSP -- sbi.admincert, hdfc.admincert
+ /cert/sbiMSP/sbiAdmin/sbiChannelMSP
+ /cert/hdfcMSP/hdfcAdmin/hdfcChannelMSP
+
+
+
+Config file: (genesis file)
+--------------------------------------------------
+
+network: fabric
+version: 2.2
+orgs: 5
+org list: [sbi,icici,hdfc,idfc,rbi]
+org certs: [/cert/sbicert, /cert/icicicert......] ---> local MSP
+.
+.
+.
+system channel: channel  ---> system channel level policy  [RBI, IDRBT, IRDAI]
+
+applcation channel: channel1, channel2, channel3 
+
+channel1: [sbi, icici]  ---> channel/global MSP  ... track 100 CR bond issuance
+
+channel2: [sbi, hdfc]   ----> 200 CR bond 
+
+channel3: [sbi, idfc]
+
+
+
+policy:
+
+ signature policy: The bond is valid if sbi and rbi approves this is good
+                   SBI.MSP and RBI.MSP
+                   AND ('SBI.MSP','RBI.MSP)
+
+                   AND('ICICI.MSP', 'RBI.MSP')
+
+
+ Implicit metapolicy: IS APPLCABLE FOR CHANNELS (application channel)
+
+  channel1 ---> AND(SBI, ICICI)
+  channel2 ---> AND(SBI, HDFC)
+  channel3 ---> and (sbi, idfc)
+
+Smartcontract : Bond issuance contract
+policy: when a contract is executed we can check who is authorizing the txn data
+        if bond.creation ---> RBI.MSP
+        if bond.validation ---> RBI SBI
+        if bond.transfer   ---> SBI ICICI
+
+
+digital currency ERC20
+
+contract: Bond issuance
+
+func: creation of token, transfer of token, balance of token, ownership of token
+
+Access control levels:
+
+
+IF ACL == RBI
+
+ { func () creation ----> central banks}
+
+
+IF ACL == BANKS
+{ transfer ----> any banks }
+
+ balance  ----> central bank, any banks
+ ownership ---> central bank, any banks
+
+
+
+
+
+public DLT: they only have 1 peer schema
+Fabric  DLT: it has 2 peer schema (endorser, committer)
+
+endorser ---> validates the txn and pass on to Orderer --> clinet
+
+committer ---> executes smart contrac, validate block and commit to ledger ---> orderer
+
+anchor peer ---> sbi, icici, hdfc, idfc
+
+leader peer ---> sbi, rbi
+                 icici, rbi
+                 hdfc, rbi  
+
+
+
+tx1 - car id 657 ---> user1 to user2
+tx2 - car id 657 ---> user2 to user3
+tx3 - car id 657 ---> user3 to user4
+
+
+worldstate: it reads the latest entry from ledger and maintains as seperate read only local copy
+
+Create a view of car id 657 and fetch me latest owner details
+
+couch DB: 
+
+car id current owner
+ 657   user4
+
+ VIEW ---> DB
+
+
+couchdb:
+
+{ "car id": 657,
+   "owner": user4
+    purchase: 2022
+}
+
+
+row1 - mark details  --- asset1
+row2 - mark    - asset2
+row3 - mark    - asset3
+row4 - mark    - asset4
+row5 - mark details - asset5
+
+select * from statedabase where name = 'mark'
+
+Read-write sets:
+-----------------
+
+ledger --- key - user1, current balance - 1500 , version -1
+
+
+txn ---> to add 100 to current balance---> execute the smart contract and creates read and write sets
+
+read set ---> (key - user1, version - 1)
+write set ---> (key - user1, value - 100)
+
+read-write set ---(key-user1, value-1600, version -2)
+
+tnx ---> to add 100 to current balance---> execute the smart contract and creates read and write sets
+
+read set ---> (key - user1, version - 1)
+write set ---> (key - user1, value - 100)
+
+read-write set ---(key-user1, value-1600, version -2)
+
+
+ordering service --- whcih creates blocks, which contains multiple txns
+
+ { (key-user1, value-1600, version -2) -- good
+   (key-user1, value-1600, version -2) -- dup
+   (key-user2, value-100, version -1)
+   (key-user10, value-600, version -10)
+ }
+
+
+Client ---> end user aplication connecting to DLT node for submiting txn0
+Peer   ---> will validate the txn from client and pass on to orderer
+Orderer --> will crete block and distribute to peer in the network in same order
+
+peer1 ---> 1 2 3 -->   orderer1 -- leader [ 1 2 3 4 5 6 7 8 9 10 11]
+peer2 ---> 3 4 5 --->  orderer2 --- leader [ 12 13 14 15 16]
+peer3 ---> 9 10 11 --> ordere3  --- leader [ 17 18]
+peer4 ---> 6 7 8 --->  ordere4
+
+peer 1 -[ 1 2 3 4 5 6 7 8 9 10 11)
+peer 2  - [ 3 4 5 1 2 3 7 8 9]
+peer 3 - [ 9 10 11 1 2 3 3]
+
+
+
+
+
+
+
