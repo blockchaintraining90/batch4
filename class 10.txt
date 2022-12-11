@@ -1,0 +1,321 @@
+Reference links:
+----------------
+
+https://github.com/blockchaintraining90/batch4
+
+https://bitcoinsv.com/scrypt/
+https://bitcoin.org/bitcoin.pdf
+
+https://ethereum.org/en/
+https://www.openzeppelin.com/
+https://ethereum.github.io/yellowpaper/paper.pdf
+https://www.tutorialspoint.com/solidity/index.htm
+https://docs.ethers.org/v5/
+https://web3js.readthedocs.io/en/v1.8.1/
+
+
+https://hyperledger-fabric.readthedocs.io/en/release-2.5/
+https://www.youtube.com/c/Hyperledger
+https://github.com/hyperledger/fabric-samples
+
+
+https://docs.r3.com/
+
+https://www.tutorialspoint.com/nodejs/index.htm
+
+
+
+
+
+makes use of promises to handle async calls
+
+
+
+
+1. getUsername
+2. CreateTxn
+3. Read from DB
+
+req --> 1
+createTxn --> 2
+Read from DB --> 3
+
+1....> done...> promose is resolved
+ ..2...(txn and not submited)...> start
+  ....1....> compltes
+   ....2.... --> create txn...> ...promise is rejected
+    ....3....> read DB (http, usern pwd) ... completed/failed
+     ...3....> done
+
+
+Chaincodes ----> shoudnt be too complex and holds only business logic
+
+servers / handling multiple req ---> client/server applications (restful services)
+
+clinets ---> restful servcies ---> fabric-network --> chaincodes/smartcontracts
+
+write a program to create file and store identity details:
+---------------------------------------------------------
+
+var fs = require('fs')
+
+fs.createfile(home/ubuntu/simplielear/hyperledger/fabric/identity/cert)
+fs.wrirefile(__dirname + "jkjhfkj")
+delete file
+apped file
+
+REST APIs:
+---------
+
+1. GET -- read from server
+2. PUT -- write data into server
+3. DELETE -- wipe data from server
+4. POST   -- write/override existing data on server
+
+ 
+express framework it proves easy way of managaing these methods
+
+var express = require('express')
+var app     = express();
+var port    = 5000;
+app.get('/',function (request, response) {
+  response.send('Hello World')
+})
+var server = app.listen(port, function() {
+ var host = server.address().address
+ var port = server.addresss().port
+ console.log("server running on port")
+});
+
+
+Corda:
+-------
+
+Flows: Represent entire work flow for a transaction to complete
+
+usra - usrb ---> 100 USD
+
+
+1. Initiate a txn from usra
+2. Debit funds from usra (smart contract)
+3. transfer funds from usra to usrb (smart contract)
+4. credit funds to usrb (smart contract)
+5. terminate the txn
+
+Validity consensus:
+-------------------
+
+usera - current balance --> 100
+
+usera --> 100 ---> userb
+
+txn --- { txnid, digcert, pubK, hash)
+
+smartc func validate txn (txnid, digcert, publickey, hash)
+
+it validates the digital sign/certificates
+
+
+
+usera ---> 100 ---> userc
+
+
+Uniqueness consensus:
+---------------------
+
+1) notary -----> which has visibilty on all ledgers of the network
+
+notary: (1,2,3,4,5,6,7,8,9) ---- central componentin corda
+------
+
+ 2 txn from same user with diff ledger ---> invalid 1 txn
+
+ledger1 ---(a,b) ---(1,2,3)
+
+ledger2 ---(a,c) ---(4,5,6)
+
+ledger3 ----(b,c) --- (7,8,9)
+
+
+type BlockStruct{
+   Header: string[]
+   Body:
+     txn string []
+     hash string []
+}
+
+
+type TxnStruct {
+      TxnPrevHash []
+      TxnCurrHash []
+}
+
+
+
+txn1 ----- node1 to node2  
+
+ [ node1 --- 100.201.161.141
+   node2 --- 100.201.161.151
+   node  --- 100.202.143.123
+ ]
+
+
+Reference links:
+----------------
+
+https://github.com/blockchaintraining90/batch4
+
+
+Blockchain Use cases:
+---------------------
+       
+1. Finance     --- Initial Public Offering
+2. Insurance   --- Insurance (claim/reinsurance/reinstatement)
+3. Loyalty     --- Loyalty rewards
+
+
+IPO:
+----
+
+Company ABC wants to raise funds and goes to public
+
+1. Due dilegence and auditing from Big4 audit firms to ABC --> DB
+2. ABC will issue X crore amount (100 Crore), share value of 100/unit --> DB
+3. ABC will approach Security Boards (governing authorities) -- (logic of allotment)
+4. Log this entru details as valid in their DB
+5. ABC company can contact channels/brokers (zerodha/groww/upi) etc
+6. channels/brokers can enroll/opt/bid for the shares
+7. Mandate wil be created per customer and amount gets locked/debited from account
+8. Based on the subsrciption the share are distributed to all customers (oversubscribed/under subscribed)
+9. Refund/partial refund
+10. share allocation/allotment
+
+
+100 units of ABC, 100 * 100 = 10000 INR
+oversubscribed
+
+100 units ---> 75 units are allocated and rest 25 units will be refunded
+
+painful process --> Long and time taking, reconcilation of data at every step
+
+
+Blockchain platform:
+--------------------
+
+PCI/DSS standards ---> advicable
+Gas fee/txn fee   ---> eth/polygon
+
+Hyperledger Fabric ---> 
+
+
+
+Configtx.yaml:
+--------------
+
+Orgs:
+----
+1. ABC          - Peer0.org1
+2. Audit Firm   - Pee0.org2
+3. Broker app   - Peer0.org3
+4. Security     - peer0.org4
+
+
+smartcontract:
+-------------
+
+1. creation of request
+2. allocation of shares ---> outside blockchain (SEBI)
+3. refund details
+4. txn status
+
+allocation smartcontract -- blockchain
+
+Ordering service:
+-----------------
+
+1. Security Board -- order0.order
+
+Consensus: etcdraft
+
+ledger: /var/production/hyperledger/fabric/ledger/IPO/details
+
+ txn1 {user1,userid,shares req:100,amt blocked: 10000, date of req: 12 dec 22} ----> Invoke chaincode function - creation of request --org4 -- 12th dec
+ txn1 {user1,userid,shares req:100,shares allocated 75,refund sahres:25} ---> allocation 19th dec
+ txn1 {user1,userid,shares req:100,shares allocated 75,refund sahres:25,ref amt 2500,refund date: 19 dec 22} --- refund function
+ txn1 --valid and refund completed
+
+MSP:
+----
+org1MSP
+ cert
+ pubK
+ priK
+
+channel: IPOChannel
+
+Endorsement POlicy:
+-------------------
+
+(('ORG1MSP' OR 'ORG3MSP') AND ('ORG4MSP'))
+
+Chaincode: ipoallocation_chaincode
+
+ location: /var/production/chaincode/ipo/ipoallocation.tar.gz
+
+
+Benefits:
+---------
+1. near realtime refunds
+2. reconcilation process reduced
+3. better turn around times
+
+
+If we implement ERC20 for this use case: Tokenization
+----------------------------------------
+
+1. ABC -- 100 CRORE 
+   100 CRORE - ERC20 -- 100 CRORE ERC20 TOKENS
+
+ ERC20
+
+ {
+  token name -- ABC Token
+  supply --- 100 crore
+  ownership --- ABC
+  date of cretion -- 12 dec
+ }
+
+
+75 units ---> diff serial numbers ---> (user1+custid+1 
+      jagdish12345001 to jagdish12345075 )
+
+proof of ownership:
+ jagdush12345050 ---> call smart contract function ---> track ownership --- func (tokenserial, name)
+    owner --- jagdish) 
+
+
+Lolayty rewards:
+----------------
+
+jetairways ---> 15000 milepoints
+
+airindia   ---> 20000 
+
+indigo
+
+xyz
+
+DGCA ---> Civil aviation: jet,air,indigo xyz 
+-------------------------
+
+airindia  ----> 30000 , 35000 -----> 5000 mile balance
+
+
+
+bank of india, bank of singapore, bank of taiwan, JPMC, ABC corp Ltd ---> Corda 
+
+Corda -- java/kotlin
+Fabric -- java/javascript/go
+ETH/POLYGON -- solidity
+Solana -- rust
+
