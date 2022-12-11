@@ -1,0 +1,171 @@
+Fabric network: 5 Banks
+------------------------
+
+Bank1 , Bank2, Bank3, Bank4, Regulator Bank----> Bond Management
+
+
+Bond creation has some private fields which cant be shared with other banks and can only be shared by Regulator
+
+Banks ----> channel ----> Regulator Bank ---> bond creation txn --->
+
+Policy ---> channel1 ---> {bank1, regular)     /bank1/channel1/
+            channel2 ---> {bank2, regulator)   /bank2/channel2
+
+            overhead of channels is there
+
+all other public ledger ----> /bond network/banks/data
+
+Private Data:
+-------------
+
+Private Data ---- {bond value: 100 CR, bond attested by:, bond insured bay: } ---> data will be masked and plain data is not visible to other users
+
+ other hash ({bond value: 100 CR, bond attested by:, bond insured bay: }) ----> huihiu8768976876089698 --> hash 
+
+ offchain DB --->  
+
+ ( pvt data collection1 ---> {bond value: 100 CR, bond attested by:, bond insured bay: } ----> huihiu8768976876089698 )
+
+
+
+Network:
+--------
+
+1. peer1 , peer2, peer3, peer4, peer5 
+2. peer1MSP, peer2MSP, peer3MSP ....etc
+3. 
+
+
+Integrnet banks ---- 50000 TPS (digital sign validation for every txn)
+ clinet(bank1) , peer, orderer, peer, client(bank2) --- 5 steps that too validating signatures -- 5 steps
+ security and High avail
+
+bank1 ---> settlement bank ----> bank2 --- 2 step process
+ trantion -- faster settlemenst
+sudo apt-get install curl (curl is used to download files from command line)
+
+
+curl --version           ---> used for downloading any files from websites
+node --version           ---> its a lang compiler
+git  --version           ---> is a repository hosted for any open source projects
+python --version         ---> pythn compiler
+docker --version         ---> running code as container
+docker-compose version   ---> used for running multiple services in a single file/command
+
+
+sudo chmod 666 /var/run/docker.sock
+
+sudo restart docker
+
+sudo curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.2 1.4.9
+
+cd fabric-samples/test-network
+
+
+to start fabric network:
+--------------------------
+
+1. Hyperledger fabric peer image
+2. Hyperledger fabric orderer image
+3. Hyperledger fabric CA image
+
+
+how many peers are there ?
+how many orderer are ther ?
+how many CA are there ?
+
+by default if we uses test network ---> 2 peer, 1 orderer
+
+
+
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+
+
+client:
+--------
+
+1. open file
+2. check balance from db
+3. transfer from usera to userb3
+
+
+server:
+-------
+
+event loops
+
+
+a) open file      ---> event1 process
+b) check balance  ---> event2
+c) transfer       ---> event3 
+
+package com.jhjh
+
+public class helloWorld {
+
+ public static void main (string []args) {
+    system.out.println("helloworld")
+}
+}
+
+compile ---> java ---> javac helloWorld.java
+
+
+Prerequisites to create a websever :
+------------------------------------
+
+1. use the http module
+2. mention a port on which the server runs
+3. IP address or localhost
+
+int a ;
+char b;
+
+var 
+
+
+
+
+Fabric SDK --- java, javascript, Go
+
+var client = require ('fabric-ca-client')
+var network = require ('fabric-network')
+
+ function submit transaction (req, res)
+   {
+     network.submit (tx1, {user1, user2, 100 RS}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
